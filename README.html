@@ -1,0 +1,535 @@
+<h1 id="hexo-theme-matery"><a href="#hexo-theme-matery" class="headerlink" title="hexo-theme-matery"></a>hexo-theme-matery</h1><p><a href="http://hits.dwyl.io/blinkfox/hexo-theme-matery" target="_blank" rel="noopener"><img src="http://hits.dwyl.io/blinkfox/hexo-theme-matery.svg" alt="HitCount"></a> <a href="https://gitter.im/hexo-theme-matery/Lobby?utm_source=badge" target="_blank" rel="noopener"><img src="https://img.shields.io/gitter/room/blinkfox/hexo-theme-matery.svg" alt="Gitter"></a> <a href="https://github.com/blinkfox/hexo-theme-matery/issues" target="_blank" rel="noopener"><img src="https://img.shields.io/github/issues/blinkfox/hexo-theme-matery.svg" alt="GitHub issues"></a> <a href="https://github.com/blinkfox/hexo-theme-matery/blob/master/LICENSE" target="_blank" rel="noopener"><img src="https://img.shields.io/github/license/blinkfox/hexo-theme-matery.svg" alt="GitHub license"></a> <a href="https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/downloads-master-green.svg" alt="Download"></a> <a href="http://hexo.io" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/hexo-%3E%3D%203.0-blue.svg" alt="Hexo Version"></a> <a href="https://github.com/blinkfox/hexo-theme-matery/network" target="_blank" rel="noopener"><img src="https://img.shields.io/github/forks/blinkfox/hexo-theme-matery.svg" alt="GitHub forks"></a> <a href="https://github.com/blinkfox/hexo-theme-matery/stargazers" target="_blank" rel="noopener"><img src="https://img.shields.io/github/stars/blinkfox/hexo-theme-matery.svg" alt="GitHub stars"></a></p>
+<p><a href="README_CN.md">🇨🇳中文说明</a> | <a href="https://blinkfox.github.io/" target="_blank" rel="noopener">DEMO</a></p>
+<blockquote>
+<p>This is a Hexo blog theme with ‘Material Design’ and responsive design.</p>
+</blockquote>
+<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ul>
+<li>Simple and beautiful, and post is Beautiful and readable.</li>
+<li><a href="https://material.io/" target="_blank" rel="noopener">Material Design</a>.</li>
+<li>Responsive design,which can be displayed well on desktop, tablet, mobile phone, etc.</li>
+<li>Home page carousel posts and changing ‘banner’ picture dynamically everday.</li>
+<li>Blog posts list with waterflow(There will be 24 images if the articl dosn’t have  featured pictures).</li>
+<li>Archive page with timeline.</li>
+<li>Tags page of the <strong>word cloud</strong> and categories page of the <strong>radar chart</strong></li>
+<li>Rich ‘About’ page (including about me, posts charts, my projects, my skills, gallery etc.)</li>
+<li>Friendly link page for customizable data</li>
+<li>Support post topping and rewards</li>
+<li>Support <code>MathJax</code></li>
+<li>TOC</li>
+<li>Can be set append the copyright information when copying the content of the post</li>
+<li>Can be set to do password verification when reading a post</li>
+<li>Comment module of <a href="https://gitalk.github.io/" target="_blank" rel="noopener">Gitalk</a>, <a href="https://imsun.github.io/gitment/" target="_blank" rel="noopener">Gitment</a>, <a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a> and <a href="https://disqus.com/" target="_blank" rel="noopener">Disqus</a>.(Gitalk is recommended)</li>
+<li>Integrated <a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">Busuanzi Statistics</a>, <code>Google Analytics</code> and post word count statistics.</li>
+<li>Support music playback and video playback on the homepage</li>
+<li>Support the <code>emoji</code> emoticon and use the <code>markdown emoji</code> grammar to directly generate the corresponding emoticon.</li>
+<li>Support <a href="http://www.daovoice.io/" target="_blank" rel="noopener">DaoVoice</a>、<a href="https://www.tidio.com/" target="_blank" rel="noopener">Tidio</a> online chat.</li>
+</ul>
+<h2 id="Contributor"><a href="#Contributor" class="headerlink" title="Contributor"></a>Contributor</h2><p>Thanks to these contributors, without whom, hexo-theme-matery won’t be this perfect.</p>
+<ul>
+<li><a href="https://github.com/HarborZeng" target="_blank" rel="noopener">@HarborZeng</a></li>
+<li><a href="https://github.com/shw2018" target="_blank" rel="noopener">@shw2018</a></li>
+<li><a href="https://github.com/L1cardo" target="_blank" rel="noopener">@L1cardo</a></li>
+<li><a href="https://github.com/Five-great" target="_blank" rel="noopener">@Five-great</a></li>
+</ul>
+<h2 id="Download"><a href="#Download" class="headerlink" title="Download"></a>Download</h2><p>You should have a <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a> blog when you see it here.If not,try to use the hexo and <a href="https://www.appinn.com/markdown/" target="_blank" rel="noopener">Markdown</a> to write your blog and post.<br>Click <a href="https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master" target="_blank" rel="noopener">here</a> to download master branch of the last stable version of the code.After decompressing,copy the <code>hexo-theme-matery</code> folder<br>to your <code>themes</code> folder of your Hexo.Of course,you can uer <code>Git clone</code> to download in your <code>themes</code> folder.</p>
+<pre><code class="bash">git <span class="built_in">clone</span> https://github.com/blinkfox/hexo-theme-matery.git</code></pre>
+<h2 id="Configuration"><a href="#Configuration" class="headerlink" title="Configuration"></a>Configuration</h2><h3 id="Modify-theme"><a href="#Modify-theme" class="headerlink" title="Modify theme"></a>Modify theme</h3><p>Modify the value of <code>theme</code> in <code>_config.yml</code> of Hexo’s root folder: <code>theme: hexo-theme-matery</code>.</p>
+<h4 id="Suggestions-for-other-changes-to-the-config-yml"><a href="#Suggestions-for-other-changes-to-the-config-yml" class="headerlink" title="Suggestions for other changes to the _config.yml:"></a>Suggestions for other changes to the <code>_config.yml</code>:</h4><ul>
+<li>Please modify the value of <code>url</code> of <code>_config.yml</code> to your website’s main <code>URL</code> (eg <code>http://xxx.github.io</code>).</li>
+<li>Recommended modify the value of the two ‘per_page<code>to be a multiple of</code>6<code>, such as:</code>12<code>,</code>18`, etc. so that the posts list can be displayed well under each screen.</li>
+<li>If you are a Chinese user, it is recommended to change the value of <code>language</code> to <code>zh-CN</code>.</li>
+</ul>
+<h3 id="new-categories-page"><a href="#new-categories-page" class="headerlink" title="new categories page"></a>new categories page</h3><p><code>categories</code> page is to show all of categories. If the <code>source</code> directory of your blog doesn’t have <code>categories/index.md</code> file, you need to new one like this:</p>
+<pre><code class="bash">hexo new page <span class="string">"categories"</span></code></pre>
+<p>to edit your new page files<code>/source/categories/index.md</code>, you need somethings as follows:</p>
+<pre><code class="yaml"><span class="meta">---</span>
+<span class="attr">title:</span> <span class="string">categories</span>
+<span class="attr">date:</span> <span class="number">2018</span><span class="number">-09</span><span class="number">-30</span> <span class="number">17</span><span class="string">:25:30</span>
+<span class="attr">type:</span> <span class="string">"categories"</span>
+<span class="attr">layout:</span> <span class="string">"categories"</span>
+<span class="meta">---</span></code></pre>
+<h3 id="new-tags-page"><a href="#new-tags-page" class="headerlink" title="new tags page"></a>new tags page</h3><p><code>tags</code> page is to show all of tags. If the <code>source</code> directory of your blog doesn’t have <code>tags/index.md</code> file,you need to new one like this:</p>
+<pre><code class="bash">hexo new page <span class="string">"tags"</span></code></pre>
+<p>to edit your new page files<code>/source/tags/index.md</code>, you need somethings as follows:</p>
+<pre><code class="yaml"><span class="meta">---</span>
+<span class="attr">title:</span> <span class="string">tags</span>
+<span class="attr">date:</span> <span class="number">2018</span><span class="number">-09</span><span class="number">-10</span> <span class="number">18</span><span class="string">:23:38</span>
+<span class="attr">type:</span> <span class="string">"tags"</span>
+<span class="attr">layout:</span> <span class="string">"tags"</span>
+<span class="meta">---</span></code></pre>
+<h3 id="new-about-page"><a href="#new-about-page" class="headerlink" title="new about page"></a>new about page</h3><p><code>about</code> page is to show my blog and myself information. If the <code>source</code> directory of your blog doesn’t have <code>about/index.md</code> file, you need to new one like this:</p>
+<pre><code class="bash">hexo new page <span class="string">"about"</span></code></pre>
+<p>to edit your new page files<code>/source/about/index.md</code>, you need somethings as follows:</p>
+<pre><code class="yaml"><span class="meta">---</span>
+<span class="attr">title:</span> <span class="string">about</span>
+<span class="attr">date:</span> <span class="number">2018</span><span class="number">-09</span><span class="number">-30</span> <span class="number">17</span><span class="string">:25:30</span>
+<span class="attr">type:</span> <span class="string">"about"</span>
+<span class="attr">layout:</span> <span class="string">"about"</span>
+<span class="meta">---</span></code></pre>
+<h3 id="new-contact-page-Optional"><a href="#new-contact-page-Optional" class="headerlink" title="new contact page (Optional)"></a>new contact page (Optional)</h3><p><code>contact</code> page is to show contact information. If the <code>source</code> directory of your blog doesn’t have <code>contact/index.md</code> file, you need to new one like this:</p>
+<pre><code class="bash">hexo new page <span class="string">"contact"</span></code></pre>
+<p>to edit your new page files<code>/source/contact/index.md</code>, you need somethings as follows:</p>
+<pre><code class="yaml"><span class="meta">---</span>
+<span class="attr">title:</span> <span class="string">contact</span>
+<span class="attr">date:</span> <span class="number">2018</span><span class="number">-09</span><span class="number">-30</span> <span class="number">17</span><span class="string">:25:30</span>
+<span class="attr">type:</span> <span class="string">"contact"</span>
+<span class="attr">layout:</span> <span class="string">"contact"</span>
+<span class="meta">---</span></code></pre>
+<blockquote>
+<p><strong>Note</strong>：The message board depends on a third-party comment system, please <strong>activate</strong> your comment system to be effective. And in the theme <code>_config.yml</code> file, the “<strong>menu</strong>“ of the <code>19</code> to <code>21</code> line is configured, and the comment about the message board cloud be canceled.</p>
+</blockquote>
+<h3 id="new-friends-link-page-Optional"><a href="#new-friends-link-page-Optional" class="headerlink" title="new friends link page (Optional)"></a>new friends link page (Optional)</h3><p>The <code>friends</code> page is a page for displaying <strong>Friendly Links</strong> information. If you don’t have a <code>friends/index.md</code> file in your blog’s <code>source</code> directory, then you need to create a new one. The command is as follows:</p>
+<pre><code class="bash">hexo new page <span class="string">"friends"</span></code></pre>
+<p>Edit the file <code>/source/friends/index.md</code> you just created, at least you need the following:</p>
+<pre><code class="yaml"><span class="meta">---</span>
+<span class="attr">title:</span> <span class="string">friends</span>
+<span class="attr">date:</span> <span class="number">2018</span><span class="number">-12</span><span class="number">-12</span> <span class="number">21</span><span class="string">:25:30</span>
+<span class="attr">type:</span> <span class="string">"friends"</span>
+<span class="attr">layout:</span> <span class="string">"friends"</span>
+<span class="meta">---</span></code></pre>
+<p>Also, create a new <code>_data</code> directory in your blog’s <code>source</code> directory and a new <code>friends.json</code> file in the <code>_data</code> directory. The contents of the file are as follows:</p>
+<pre><code class="json">[{
+    <span class="attr">"avatar"</span>: <span class="string">"http://image.luokangyuan.com/1_qq_27922023.jpg"</span>,
+    <span class="attr">"name"</span>: <span class="string">"MaJang"</span>,
+    <span class="attr">"introduction"</span>: <span class="string">"I am not a master, just looking for the master's footsteps."</span>,
+    <span class="attr">"url"</span>: <span class="string">"http://luokangyuan.com/"</span>,
+    <span class="attr">"title"</span>: <span class="string">"Read More"</span>
+}, {
+    <span class="attr">"avatar"</span>: <span class="string">"http://image.luokangyuan.com/4027734.jpeg"</span>,
+    <span class="attr">"name"</span>: <span class="string">"Blinkfox"</span>,
+    <span class="attr">"introduction"</span>: <span class="string">"Hello, I'm blinkfox, I like programming."</span>,
+    <span class="attr">"url"</span>: <span class="string">"https://blinkfox.github.io/"</span>,
+    <span class="attr">"title"</span>: <span class="string">"Visit Blog"</span>
+}, {
+    <span class="attr">"avatar"</span>: <span class="string">"http://image.luokangyuan.com/avatar.jpg"</span>,
+    <span class="attr">"name"</span>: <span class="string">"ja_rome"</span>,
+    <span class="attr">"introduction"</span>: <span class="string">"Ordinary steps can also go out of the great journey."</span>,
+    <span class="attr">"url"</span>: <span class="string">"https://me.csdn.net/jlh912008548"</span>,
+    <span class="attr">"title"</span>: <span class="string">"Read More"</span>
+}]</code></pre>
+<h3 id="Menu-navigation-configuration"><a href="#Menu-navigation-configuration" class="headerlink" title="Menu navigation configuration"></a>Menu navigation configuration</h3><h4 id="Configure-the-name-of-the-basic-menu-navigation-path-url-and-icon-icon"><a href="#Configure-the-name-of-the-basic-menu-navigation-path-url-and-icon-icon" class="headerlink" title="Configure the name of the basic menu navigation, path url and icon icon."></a>Configure the name of the basic menu navigation, path url and icon icon.</h4><ol>
+<li>The menu navigation name can be Chinese or English (eg: <code>Index</code> or <code>Home</code>)</li>
+<li>Icon icon can be found in <a href="https://fontawesome.com/icons" target="_blank" rel="noopener">Font Awesome</a></li>
+</ol>
+<pre><code class="yaml"><span class="attr">menu:</span>
+  <span class="attr">Index:</span>
+    <span class="attr">url:</span> <span class="string">/</span>
+    <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-home</span>
+  <span class="attr">Tags:</span>
+    <span class="attr">url:</span> <span class="string">/tags</span>
+    <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-tags</span>
+  <span class="attr">Categories:</span>
+    <span class="attr">url:</span> <span class="string">/categories</span>
+    <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-bookmark</span>
+  <span class="attr">Archives:</span>
+    <span class="attr">url:</span> <span class="string">/archives</span>
+    <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-archive</span>
+  <span class="attr">About:</span>
+    <span class="attr">url:</span> <span class="string">/about</span>
+    <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-user-circle</span>
+  <span class="attr">Friends:</span>
+    <span class="attr">url:</span> <span class="string">/friends</span>
+    <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-address-book</span></code></pre>
+<h4 id="Secondary-menu-configuration-method"><a href="#Secondary-menu-configuration-method" class="headerlink" title="Secondary menu configuration method"></a>Secondary menu configuration method</h4><p>If you need a secondary menu, you can do the following on the basis of the original basic menu navigation.</p>
+<ol>
+<li>Add the <code>children</code> keyword to the first level menu that needs to add a secondary menu (eg: add <code>children</code> under the <code>About</code> menu)</li>
+<li>Create a secondary menu name, path url and icon icon under <code>children</code>.</li>
+<li>Note that each secondary menu module must be preceded by <code>-</code>.</li>
+<li>Note the indentation format.</li>
+</ol>
+<pre><code class="yaml"><span class="attr">menu:</span>
+  <span class="attr">Index:</span>
+    <span class="attr">url:</span> <span class="string">/</span>
+    <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-home</span>
+  <span class="attr">Tags:</span>
+    <span class="attr">url:</span> <span class="string">/tags</span>
+    <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-tags</span>
+  <span class="attr">Categories:</span>
+    <span class="attr">url:</span> <span class="string">/categories</span>
+    <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-bookmark</span>
+  <span class="attr">Archives:</span>
+    <span class="attr">url:</span> <span class="string">/archives</span>
+    <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-archive</span>
+  <span class="attr">About:</span>
+    <span class="attr">url:</span> <span class="string">/about</span>
+    <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-user-circle</span>
+  <span class="attr">Friends:</span>
+    <span class="attr">url:</span> <span class="string">/friends</span>
+    <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-address-book</span>
+  <span class="attr">Medias:</span>
+    <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-list</span>
+    <span class="attr">children:</span>
+      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Musics</span>
+        <span class="attr">url:</span> <span class="string">/musics</span>
+        <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-music</span>
+      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Movies</span>
+        <span class="attr">url:</span> <span class="string">/movies</span>
+        <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-film</span>
+      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Books</span>
+        <span class="attr">url:</span> <span class="string">/books</span>
+        <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-book</span>
+      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Galleries</span>
+        <span class="attr">url:</span> <span class="string">/galleries</span>
+        <span class="attr">icon:</span> <span class="string">fas</span> <span class="string">fa-image</span></code></pre>
+<h3 id="Code-highlight"><a href="#Code-highlight" class="headerlink" title="Code highlight"></a>Code highlight</h3><p>Hexo theme uses Hexo’s plugin<a href="https://github.com/ele828/hexo-prism-plugin" target="_blank" rel="noopener">hexo-prism-plugin</a> to show the code highlight instead of its own theme.The Installation commands are as follows:</p>
+<pre><code class="bash">npm i -S hexo-prism-plugin</code></pre>
+<p>Then,modify the value of <code>highlight.enable</code> to <code>false</code> in <code>_config.yml</code> file of Hexo root folder，and add the configuration of <code>prism</code> plugin as follows:</p>
+<pre><code class="yaml"><span class="attr">highlight:</span>
+  <span class="attr">enable:</span> <span class="literal">false</span>
+
+<span class="attr">prism_plugin:</span>
+  <span class="attr">mode:</span> <span class="string">'preprocess'</span>    <span class="comment"># realtime/preprocess</span>
+  <span class="attr">theme:</span> <span class="string">'tomorrow'</span>
+  <span class="attr">line_number:</span> <span class="literal">false</span>    <span class="comment"># default false</span>
+  <span class="attr">custom_css:</span></code></pre>
+<h3 id="Search"><a href="#Search" class="headerlink" title="Search"></a>Search</h3><p>The theme uses the Hexo plugin<a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-search</a> to search the content,and the Installation commands are as follows:</p>
+<pre><code class="bash">npm install hexo-generator-search --save</code></pre>
+<p>Add configuration of <code>_config.yml</code> file in Hexo root folder as follows：</p>
+<pre><code class="yaml"><span class="attr">search:</span>
+  <span class="attr">path:</span> <span class="string">search.xml</span>
+  <span class="attr">field:</span> <span class="string">post</span></code></pre>
+<h3 id="Translate-Chinese-Link-to-Pinyin-Recommend"><a href="#Translate-Chinese-Link-to-Pinyin-Recommend" class="headerlink" title="Translate Chinese Link to Pinyin (Recommend)"></a>Translate Chinese Link to Pinyin (Recommend)</h3><p>Defualt permalinks of Hexo will include Chinese if your atrticle’s title is Chinese.But it’s adverse to <code>SEO</code>,and <code>gitment</code> comments don’t suport Chinese Link as well.We can use the <a href="https://github.com/viko16/hexo-permalink-pinyin" target="_blank" rel="noopener">hexo-permalink-pinyin</a> of Hexo plugin to generate permalinks of Chinese Pinyin  when generating posts.</p>
+<p>Installation commands are as follows：</p>
+<pre><code class="bash">npm i hexo-permalink-pinyin --save</code></pre>
+<p>Add such configurations in <code>_config.yml</code> file of  Hexo:</p>
+<pre><code class="yaml"><span class="attr">permalink_pinyin:</span>
+  <span class="attr">enable:</span> <span class="literal">true</span>
+  <span class="attr">separator:</span> <span class="string">'-'</span> <span class="comment"># default: '-'</span></code></pre>
+<blockquote>
+<p><em>*Note</em>:<a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">hexo-abbrlink</a> can genarate non-Chinese link in addtion to this plugin.</p>
+</blockquote>
+<h3 id="Post-word-count-statistics-plugin-Recommend"><a href="#Post-word-count-statistics-plugin-Recommend" class="headerlink" title="Post word count statistics plugin (Recommend)"></a>Post word count statistics plugin (Recommend)</h3><p>If you want to display the post word count and reading time information in the post detail page, you can install the <a href="https://github.com/willin/hexo-wordcount" target="_blank" rel="noopener">hexo-wordcount</a> plugin.</p>
+<p>Installation commands are as follows：</p>
+<pre><code class="bash">npm i --save hexo-wordcount</code></pre>
+<p>Then just activate the following configuration items in the theme <code>_config.yml</code> file:</p>
+<pre><code class="yaml"><span class="attr">postInfo:</span>
+  <span class="attr">date:</span> <span class="literal">true</span>
+  <span class="attr">update:</span> <span class="literal">false</span>
+  <span class="attr">wordCount:</span> <span class="literal">false</span> <span class="comment"># set true.</span>
+  <span class="attr">totalCount:</span> <span class="literal">false</span> <span class="comment"># set true.</span>
+  <span class="attr">min2read:</span> <span class="literal">false</span> <span class="comment"># set true.</span>
+  <span class="attr">readCount:</span> <span class="literal">false</span> <span class="comment"># set true.</span></code></pre>
+<h3 id="Add-emoji-support-Optional"><a href="#Add-emoji-support-Optional" class="headerlink" title="Add emoji support (Optional)"></a>Add emoji support (Optional)</h3><p>This theme adds support for the <code>emoji</code> emoticon, using the Hexo plugin for [hexo-filter-github-emojis] (<a href="https://npm.taobao.org/package/hexo-filter-github-emojis" target="_blank" rel="noopener">https://npm.taobao.org/package/hexo-filter-github-emojis</a>) to support The generation of the <code>emoji</code> expression, the corresponding <code>markdown emoji</code> syntax (<code>::</code>, for example: <code>:smile:</code>) is converted into a <code>emoji</code> expression that jumps. The installation command is as follows:</p>
+<pre><code class="bash">npm install hexo-filter-github-emojis --save</code></pre>
+<p>Add configuration of <code>_config.yml</code> file in Hexo root folder as follows：</p>
+<pre><code class="yaml"><span class="attr">githubEmojis:</span>
+  <span class="attr">enable:</span> <span class="literal">true</span>
+  <span class="attr">className:</span> <span class="string">github-emoji</span>
+  <span class="attr">inject:</span> <span class="literal">true</span>
+  <span class="attr">styles:</span>
+  <span class="attr">customEmojis:</span></code></pre>
+<p>Execute <code>hexo clean &amp;&amp; hexo g</code> to regenerate the blog file, and then  you can see the expression you wrote in the <code>emoji</code> grammar in the corresponding position in the article.</p>
+<h3 id="Add-RSS-feed-support-Optional"><a href="#Add-RSS-feed-support-Optional" class="headerlink" title="Add RSS feed support (Optional)"></a>Add RSS feed support (Optional)</h3><p>The theme uses the Hexo plugin<a href="https://github.com/hexojs/hexo-generator-feed" target="_blank" rel="noopener">hexo-generator-feed</a> to support <code>RSS</code> feed , and the Installation commands are as follows:</p>
+<pre><code class="bash">npm install hexo-generator-feed --save</code></pre>
+<p>Add configuration of <code>_config.yml</code> file in Hexo root folder as follows：</p>
+<pre><code class="yaml"><span class="attr">feed:</span>
+  <span class="attr">type:</span> <span class="string">atom</span>
+  <span class="attr">path:</span> <span class="string">atom.xml</span>
+  <span class="attr">limit:</span> <span class="number">20</span>
+  <span class="attr">hub:</span>
+  <span class="attr">content:</span>
+  <span class="attr">content_limit:</span> <span class="number">140</span>
+  <span class="attr">content_limit_delim:</span> <span class="string">' '</span>
+  <span class="attr">order_by:</span> <span class="string">-date</span></code></pre>
+<p>Execute <code>hexo clean &amp;&amp; hexo g</code> to regenerate the blog file, and then you can see the <code>atom.xml</code> file in the <code>public</code> folder, indicating that you have successfully installed.</p>
+<h3 id="DaoVoice-online-chat-Optional"><a href="#DaoVoice-online-chat-Optional" class="headerlink" title="DaoVoice online chat (Optional)"></a><a href="http://www.daovoice.io/" target="_blank" rel="noopener">DaoVoice</a> online chat (Optional)</h3><p>Go to the official website of <a href="http://www.daovoice.io/" target="_blank" rel="noopener">DaoVoice</a>, register and get the <code>app_id</code>. Fill the <code>app_id</code> into the the theme <code>_config.yml</code> file.</p>
+<h3 id="Tidio-online-chat-Optional"><a href="#Tidio-online-chat-Optional" class="headerlink" title="Tidio online chat (Optional)"></a><a href="https://www.tidio.com/" target="_blank" rel="noopener">Tidio</a> online chat (Optional)</h3><p>Go to the official website of <a href="https://www.tidio.com/" target="_blank" rel="noopener">Tidio</a>, register and get the <code>Public Key</code>. Fill the <code>Public Key</code> into the the theme <code>_config.yml</code> file.</p>
+<h3 id="Modify-website-footer"><a href="#Modify-website-footer" class="headerlink" title="Modify website footer"></a>Modify website footer</h3><p>Website footer may need to be customized, and it is not convenient to make configuration information, So need to modify and process it by yourself. The changes are in the <code>/layout/_partial/footer.ejs</code> file, including the site, the theme used, the amount of traffic and so on.</p>
+<h3 id="Modify-social-links"><a href="#Modify-social-links" class="headerlink" title="Modify social links"></a>Modify social links</h3><p>In the theme <code>_config.yml</code> file, the configurations of <code>QQ</code>, <code>GitHub</code> and mailbox and more are supported by default. In the <code>/layout/_partial/social-link.ejs</code> file of the theme, you can add or modify the social link address as you need. To add a link, please refer to the following code:</p>
+<pre><code class="html"><span class="tag">&lt;<span class="name">%</span> <span class="attr">if</span> (<span class="attr">theme.socialLink.github</span>) { %&gt;</span>
+    <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"&lt;%= theme.socialLink.github %&gt;"</span> <span class="attr">class</span>=<span class="string">"tooltipped"</span> <span class="attr">target</span>=<span class="string">"_blank"</span> <span class="attr">data-tooltip</span>=<span class="string">"访问我的GitHub"</span> <span class="attr">data-position</span>=<span class="string">"top"</span> <span class="attr">data-delay</span>=<span class="string">"50"</span>&gt;</span>
+        <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"fab fa-github"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>
+    <span class="tag">&lt;/<span class="name">a</span>&gt;</span>
+<span class="tag">&lt;<span class="name">%</span> } %&gt;</span></code></pre>
+<p>You can search social icon such as <code>fab fa-github</code> in <a href="https://fontawesome.com/icons" target="_blank" rel="noopener">Font Awesome</a>.There are common social icons you can reference:</p>
+<ul>
+<li>Facebook: <code>fab fa-facebook</code></li>
+<li>Twitter: <code>fab fa-twitter</code></li>
+<li>Google-plus: <code>fab fa-google-plus</code></li>
+<li>Linkedin: <code>fab fa-linkedin</code></li>
+<li>Tumblr: <code>fab fa-tumblr</code></li>
+<li>Medium: <code>fab fa-medium</code></li>
+<li>Slack: <code>fab fa-slack</code></li>
+<li>Sina Weibo: <code>fab fa-weibo</code></li>
+<li>Wechat: <code>fab fa-weixin</code></li>
+<li>QQ: <code>fab fa-qq</code></li>
+<li>Zhihu: <code>fab fa-zhihu</code></li>
+</ul>
+<blockquote>
+<p><strong>Note</strong>: The version of <code>Font Awesome</code> is <code>5.11.0</code>.</p>
+</blockquote>
+<h3 id="Configure-music-player-optional"><a href="#Configure-music-player-optional" class="headerlink" title="Configure music player (optional)"></a>Configure music player (optional)</h3><p>To support music playing, you must activate the file of music playing configuration and music data.</p>
+<p>First, create a new <code>musics.json</code> file in the <code>_data</code> directory (new if you don’t have one) of your blog’s <code>source</code> directory. The contents of the file are as follows:</p>
+<pre><code class="json">[{
+    <span class="attr">"name"</span>: <span class="string">"五月雨变奏电音"</span>,
+    <span class="attr">"artist"</span>: <span class="string">"AnimeVibe"</span>,
+    <span class="attr">"url"</span>: <span class="string">"http://xxx.com/music1.mp3"</span>,
+    <span class="attr">"cover"</span>: <span class="string">"http://xxx.com/music-cover1.png"</span>
+}, {
+    <span class="attr">"name"</span>: <span class="string">"Take me hand"</span>,
+    <span class="attr">"artist"</span>: <span class="string">"DAISHI DANCE,Cecile Corbel"</span>,
+    <span class="attr">"url"</span>: <span class="string">"/medias/music/music2.mp3"</span>,
+    <span class="attr">"cover"</span>: <span class="string">"/medias/music/cover2.png"</span>
+}, {
+    <span class="attr">"name"</span>: <span class="string">"Shape of You"</span>,
+    <span class="attr">"artist"</span>: <span class="string">"J.Fla"</span>,
+    <span class="attr">"url"</span>: <span class="string">"http://xxx.com/music3.mp3"</span>,
+    <span class="attr">"cover"</span>: <span class="string">"http://xxx.com/music-cover3.png"</span>
+}]</code></pre>
+<blockquote>
+<p><strong>Note</strong>: The properties in the above JSON: <code>name</code>, <code>artist</code>, <code>url</code>, <code>cover</code> indicate the name of the music, the author, the music file address, and the music cover, respectively.</p>
+</blockquote>
+<p>Then, activate the configuration in the theme’s <code>_config.yml</code> configuration file:</p>
+<pre><code class="yaml"><span class="comment"># Whether to display the musics.</span>
+<span class="attr">music:</span>
+  <span class="attr">enable:</span> <span class="literal">true</span>
+  <span class="attr">showTitle:</span> <span class="literal">false</span>
+  <span class="attr">title:</span> <span class="string">Listen</span> <span class="string">to</span> <span class="string">music</span>
+  <span class="attr">fixed:</span> <span class="literal">false</span> <span class="comment"># enable fixed mode</span>
+  <span class="attr">autoplay:</span> <span class="literal">false</span> <span class="comment"># audio autoplay</span>
+  <span class="attr">theme:</span> <span class="string">'#42b983'</span>
+  <span class="attr">loop:</span> <span class="string">'all'</span> <span class="comment"># player loop play, values: 'all', 'one', 'none'</span>
+  <span class="attr">order:</span> <span class="string">'list'</span> <span class="comment"># player play order, values: 'list', 'random'</span>
+  <span class="attr">preload:</span> <span class="string">'auto'</span> <span class="comment"># values: 'none', 'metadata', 'auto'</span>
+  <span class="attr">volume:</span> <span class="number">0.7</span> <span class="comment"># default volume, notice that player will remember user setting, default volume will not work after user set volume themselves</span>
+  <span class="attr">listFolded:</span> <span class="literal">false</span> <span class="comment"># indicate whether list should folded at first</span>
+  <span class="attr">listMaxHeight:</span> <span class="comment"># list max height</span></code></pre>
+<h2 id="Post-Front-matter"><a href="#Post-Front-matter" class="headerlink" title="Post Front-matter"></a>Post Front-matter</h2><h3 id="Detailed-Front-matter-options"><a href="#Detailed-Front-matter-options" class="headerlink" title="Detailed Front-matter options"></a>Detailed Front-matter options</h3><p>Everything in the Front-matter option is <strong>not required</strong>. But I still recommend at least filling in the values of <code>title</code> and <code>date</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Options</th>
+<th>Defaults</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>title</td>
+<td>Markdown’s file title</td>
+<td>Post title, it is highly recommended to fill in this option</td>
+</tr>
+<tr>
+<td>date</td>
+<td>Date and time when the file created</td>
+<td>Publish time, it is highly recommended to fill in this option, and it is best to ensure that it is globally unique</td>
+</tr>
+<tr>
+<td>author</td>
+<td><code>author</code> in root <code>_config.yml</code></td>
+<td>Post author</td>
+</tr>
+<tr>
+<td>img</td>
+<td>a value in <code>featureImages</code></td>
+<td>Post feature image，For exampl: <code>http://xxx.com/xxx.jpg</code></td>
+</tr>
+<tr>
+<td>top</td>
+<td><code>true</code></td>
+<td>Recommended post (whether the post is topped), if the <code>top</code> value is <code>true</code>, it will be recommended as a homepage post.</td>
+</tr>
+<tr>
+<td>cover</td>
+<td><code>false</code></td>
+<td>The <code>v1.0.2</code> version is added to indicate whether the post needs to be added to the homepage carousel cover.</td>
+</tr>
+<tr>
+<td>coverImg</td>
+<td>null</td>
+<td>The new version of <code>v1.0.2</code> indicates that the post needs to display the image path on the cover of the homepage. If not, the default image of the post is used by default.</td>
+</tr>
+<tr>
+<td>password</td>
+<td>null</td>
+<td>The post read the password. If you want to set the reading verification password for the article, you can set the value of <code>password</code>, which must be encrypted with <code>SHA256</code> to prevent others from seeing it. The premise is that the <code>verifyPassword</code> option is activated in the theme’s <code>config.yml</code></td>
+</tr>
+<tr>
+<td>toc</td>
+<td><code>true</code></td>
+<td>Whether TOC is turned on or not, you can turn off the TOC function for an article. The premise is that the <code>toc</code> option is activated in the theme’s <code>config.yml</code></td>
+</tr>
+<tr>
+<td>mathjax</td>
+<td><code>false</code></td>
+<td>Whether to enable math formula support, whether this article starts <code>mathjax</code>, and you need to open it in the theme <code>_config.yml</code> file.</td>
+</tr>
+<tr>
+<td>summary</td>
+<td>null</td>
+<td>Post summary, custom post summary content, if the attribute has a value, the post card summary will display the text, otherwise the program will automatically intercept part of the article as a summary</td>
+</tr>
+<tr>
+<td>categories</td>
+<td>null</td>
+<td>Article classification, the classification of this topic represents a macroscopically large classification, only one article is recommended for one classification.</td>
+</tr>
+<tr>
+<td>tags</td>
+<td>null</td>
+<td>Post label, a post can have multiple labels</td>
+</tr>
+<tr>
+<td>keywords</td>
+<td>Post Title</td>
+<td>Post key Words With SEO</td>
+</tr>
+<tr>
+<td>reprintPolicy</td>
+<td>cc_by</td>
+<td>Post reprint policy, value could be one of cc_by, cc_by_nd, cc_by_sa, cc_by_nc, cc_by_nc_nd, cc_by_nc_sa, cc0, noreprint and pay</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>Note</strong>: </p>
+<ol>
+<li>post’s featured piature will take remainder if not writing the <code>img</code> property,and chose the featured picture of theme to let all of post’s picture <strong>have their own characteristics</strong>.</li>
+<li>The value of <code>date</code> should try to ensure that each article is unique, because <code>Gitalk</code> and <code>Gitment</code> recognize <code>id</code> in this topic are uniquely identified by the value of <code>date</code>.</li>
+<li>If you want to set the ability to read the verification password for the article, you should not only set the value of the password with SHA256 encryption in Front-matter, but also activate the configuration in the theme <code>_config.yml</code>.</li>
+<li>you can define reprint policy for a single article in the front-matter of the specific md file using this key: reprintPolicy</li>
+</ol>
+</blockquote>
+<p>The following are examples of the post’s <code>Front-matter</code>.</p>
+<h3 id="The-simplest-example"><a href="#The-simplest-example" class="headerlink" title="The simplest example"></a>The simplest example</h3><pre><code class="yaml"><span class="meta">---</span>
+<span class="attr">title:</span> <span class="string">typora-vue-theme</span> <span class="string">Theme</span> <span class="string">introduction</span>
+<span class="attr">date:</span> <span class="number">2018</span><span class="number">-09</span><span class="number">-07</span> <span class="number">09</span><span class="string">:25:00</span>
+<span class="meta">---</span></code></pre>
+<h3 id="The-most-comprehensive-example"><a href="#The-most-comprehensive-example" class="headerlink" title="The most comprehensive example"></a>The most comprehensive example</h3><pre><code class="yaml"><span class="meta">---</span>
+<span class="attr">title:</span> <span class="string">typora-vue-theme</span> <span class="string">Theme</span> <span class="string">introduction</span>
+<span class="attr">date:</span> <span class="number">2018</span><span class="number">-09</span><span class="number">-07</span> <span class="number">09</span><span class="string">:25:00</span>
+<span class="attr">author:</span> <span class="string">Qi</span> <span class="string">Zhao</span>
+<span class="attr">img:</span> <span class="string">/source/images/xxx.jpg</span>
+<span class="attr">top:</span> <span class="literal">true</span>
+<span class="attr">cover:</span> <span class="literal">true</span>
+<span class="attr">coverImg:</span> <span class="string">/images/1.jpg</span>
+<span class="attr">password:</span> <span class="string">8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92</span>
+<span class="attr">toc:</span> <span class="literal">false</span>
+<span class="attr">mathjax:</span> <span class="literal">false</span>
+<span class="attr">summary:</span> <span class="string">This</span> <span class="string">is</span> <span class="string">the</span> <span class="string">content</span> <span class="string">of</span> <span class="string">your</span> <span class="string">custom</span> <span class="string">post</span> <span class="string">summary.</span> <span class="string">If</span> <span class="string">there</span> <span class="string">is</span> <span class="string">a</span> <span class="string">value</span> <span class="string">for</span> <span class="string">this</span> <span class="string">attribute,</span> <span class="string">the</span> <span class="string">post</span> <span class="string">card</span> <span class="string">summary</span> <span class="string">will</span> <span class="string">display</span> <span class="string">the</span> <span class="string">text,</span> <span class="string">otherwise</span> <span class="string">the</span> <span class="string">program</span> <span class="string">will</span> <span class="string">automatically</span> <span class="string">intercept</span> <span class="string">part</span> <span class="string">of</span> <span class="string">the</span> <span class="string">post</span> <span class="string">content</span> <span class="string">as</span> <span class="string">a</span> <span class="string">summary.</span>
+<span class="attr">categories:</span> <span class="string">Markdown</span>
+<span class="attr">tags:</span>
+  <span class="bullet">-</span> <span class="string">Typora</span>
+  <span class="bullet">-</span> <span class="string">Markdown</span>
+<span class="meta">---</span></code></pre>
+<h2 id="Screenshot"><a href="#Screenshot" class="headerlink" title="Screenshot"></a>Screenshot</h2><h3 id="Home"><a href="#Home" class="headerlink" title="Home"></a>Home</h3><p><img src="http://static.blinkfox.com/matery-20181202-1.png" alt="首页"></p>
+<p><img src="http://static.blinkfox.com/matery-20181202-2.png" alt="首页推荐文章"></p>
+<p><img src="http://static.blinkfox.com/matery-20181202-3.png" alt="首页文章列表"></p>
+<p><img src="http://static.blinkfox.com/matery-20181202-7.png" alt="首页文章列表"></p>
+<p><img src="http://static.blinkfox.com/matery-20181202-8.png" alt="首页文章列表"></p>
+<h2 id="Custom-modification"><a href="#Custom-modification" class="headerlink" title="Custom modification"></a>Custom modification</h2><p>You can modify some custom modification in <code>_config.yml</code> as follows:</p>
+<ul>
+<li>Menu</li>
+<li>My dream</li>
+<li>Home music player and video player configuration</li>
+<li>Whether to display the title of the recommended posts</li>
+<li><code>favicon</code> and <code>Logo</code></li>
+<li>profiles</li>
+<li>TOC</li>
+<li>post rewards</li>
+<li>Append copyright information when copying article content</li>
+<li>MathJax</li>
+<li>Post word count, reading times</li>
+<li>the ‘love’ effect of clicking on the page</li>
+<li>My Projects</li>
+<li>My Skills</li>
+<li>My Gallery</li>
+<li>Gitalk, Gitment, Valine and Disqus</li>
+<li><a href="http://busuanzi.ibruce.info/" target="_blank" rel="noopener">Busuanzi Statistics</a> And Google Analytics</li>
+<li>The map of default featured pictures. The theme will take remainde according to <code>hashcode</code> of post title if the post dose not set featured piactures.</li>
+</ul>
+<p><strong>I think everyone should have their own style and feature of blog</strong>。if you are not satisfiled with functions and theme color,you can modify by yourself,and more free functions and deatil need to be modified by modify source code when it is hard to be finished in <code>_config.yml</code>.</p>
+<h3 id="modeing-theme-color"><a href="#modeing-theme-color" class="headerlink" title="modeing theme color"></a>modeing theme color</h3><p>Search <code>.bg-color</code> to modify background color in <code>/source/css/matery.css</code> in theme file：</p>
+<pre><code class="css"><span class="comment">/* The overall background color, including navigation, mobile navigation, footer, tab, etc.. */</span>
+<span class="selector-class">.bg-color</span> {
+    <span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(to right, #<span class="number">4</span>cbf30 <span class="number">0%</span>, #<span class="number">0</span>f9d58 <span class="number">100%</span>);
+}
+
+<span class="keyword">@-webkit-keyframes</span> rainbow {
+   <span class="comment">/* Dynamically switch background colors. */</span>
+}
+
+<span class="keyword">@keyframes</span> rainbow {
+    <span class="comment">/* Dynamically switch background colors. */</span>
+}</code></pre>
+<h3 id="Modify-banner-picture-and-post’s-featured-pictures"><a href="#Modify-banner-picture-and-post’s-featured-pictures" class="headerlink" title="Modify banner picture and post’s featured pictures"></a>Modify banner picture and post’s featured pictures</h3><p>You can change <code>banner</code> pictures in <code>/source/medias/banner</code> as you like .Theme code can switch  dynamically every day and just need 7 pictures.If you master <code>JavaScript</code>,you can change it to your favorite swithing logic,such as Random switching.The code of switching <code>banner</code>is in <code>&lt;script&gt;&lt;/script&gt;</code> of <code>/layout/_partial/bg-cover-content.ejs</code>file.</p>
+<pre><code class="javascript">$(<span class="string">'.bg-cover'</span>).css(<span class="string">'background-image'</span>, <span class="string">'url(/medias/banner/'</span> + <span class="keyword">new</span> <span class="built_in">Date</span>().getDay() + <span class="string">'.jpg)'</span>);</code></pre>
+<p>There are 24 featured pictures in <code>/source/medias/featureimages</code>,you can add or delete,and modify it in <code>_config.yml</code> at the sametime.</p>
+<h2 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h2><ul>
+<li>v1.2.2<ul>
+<li>Add the function of customizing post <code>keywords</code>;</li>
+<li>Add the function and configuration of static ribbon click switch;</li>
+<li>Set the word count, ribbon and site running time as <code>false</code> by default;</li>
+<li>Modify the meta attribute of the post’s <code>description</code> to read the post’s <code>summary</code> attribute first;</li>
+<li>Modified HTML tag of article title from <code>div</code> to<code>h1</code> title;</li>
+<li>Fixed the problem of incorrect footer <code>year</code> display;</li>
+<li>Removed redundant <code>setTimeout</code> js code from site runtime;</li>
+</ul>
+</li>
+<li>v1.2.1<ul>
+<li>Added TOC’s expand directory level settings and scroll bar function to prevent directory overflow when there are many directories;</li>
+<li>Modified the display mode of the homepage to the previous mode;</li>
+<li>Fixed the problem that the home button has no border;</li>
+<li>Fixed an issue where the homepage card was still generated when the music and bottom suction modes, videos, recommended articles, etc. were not activated;</li>
+<li>Fixed the problem that wordCount plugin is not installed, and modified some configurations;</li>
+<li>Fixed the issue that the page does not display music when there are single quotes in the JSON configuration of the music;</li>
+<li>Fixed the problem of tag cloud link failure under Hexo4.0;</li>
+</ul>
+</li>
+<li>v1.2.0<ul>
+<li>Added online chat function of <a href="http://www.daovoice.io/" target="_blank" rel="noopener">DaoVoice</a> and <a href="https://www.tidio.com/" target="_blank" rel="noopener">Tidio</a>;</li>
+<li>Added the ability to have two levels of menus;</li>
+<li>Added a subtitle for typing effects;</li>
+<li>Added the ability to preload web content;</li>
+<li>Added the configuration function of the home banner whether to switch daily;</li>
+<li>Added the ability to display ICP filing information, which is not enabled by default;</li>
+<li>Added configuration for Baidu analysis;</li>
+<li>Added language display, one-click copy, display line number and other functions of the code block;</li>
+<li>Added the ability to customize the configuration of the home page car map and recommended articles;</li>
+<li>Added article page to display update date;</li>
+<li>Added an icon for the reload rule;</li>
+<li>Modified the layout and display of the sharing;</li>
+<li>Upgraded and updated versions of some dependent libraries;</li>
+<li>other details to modify and optimize;</li>
+</ul>
+</li>
+<li>v1.1.0<ul>
+<li>Added support for <code>emoji</code>;</li>
+<li>Added site run time statistics and configuration;</li>
+<li>Added the function of message board, it is not enabled by default;</li>
+<li>Added <code>Twitter</code>, <code>Facebook</code>, and <code>zhihu</code> social links;</li>
+<li>Updated the version of <code>Valine</code> to the latest version;</li>
+<li>modification of other minor details;</li>
+</ul>
+</li>
+<li>v1.0.4<ul>
+<li>Added the ability to customize the reprint rules for each post;</li>
+<li>Fix the problem that the custom summary of the previous page and the next page does not display;</li>
+<li>Fixed the problem that the link of the friends link was misplaced and changed to the layout of the waterfall stream;</li>
+<li>Other minor bugs fixes;</li>
+</ul>
+</li>
+<li>v1.0.3<ul>
+<li>Added <code>TOC</code> expansion, shrink button and related configuration, this button is displayed by default;</li>
+</ul>
+</li>
+<li>v1.0.2<ul>
+<li>Upgraded the <a href="https://materializecss.com/" target="_blank" rel="noopener">Materialize</a> framework version to <code>1.0.0</code>, refactoring and modifying some files or problems during the upgrade process;</li>
+<li>Added a full-screen carousel effect on the front cover of the home page to set more important posts to the home page carousel;</li>
+<li>Fix the first button on the front page is Chinese;</li>
+<li>Fixed an issue where clicking search input on the iPhone to get focus;</li>
+<li>Fixed an issue where the page was enlarged after the input box on the iPhone got focus;</li>
+<li>Fix some posts or UI display issues;</li>
+</ul>
+</li>
+<li>v1.0.1<ul>
+<li>Adjust the file request path of <code>css</code> and <code>js</code> in the <code>_config.yml</code> of the theme, so that you can quickly configure their own CDN;</li>
+<li>Whether the new code is configurable or not, the default is a line break;</li>
+<li>The <code>TOC</code> function is activated by default, and the <code>Front-matter</code> configuration option for <code>TOC</code> is turned off for a post;</li>
+<li>Fixed an issue where the highlighted directory option was inaccurate when scrolling through the post;</li>
+<li>Remove the search box under <code>IOS</code> to automatically get the focus attribute, preventing the view from moving up after automatically getting the focus;</li>
+</ul>
+</li>
+<li>v1.0.0<ul>
+<li>Added all the basic features;</li>
+</ul>
+</li>
+</ul>
