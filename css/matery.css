@@ -248,7 +248,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #000384 0%, #6dc4e0 100%);
 }
 
 .text-color {
@@ -567,7 +567,8 @@ header .go-back i {
     display: block;
     left: 0;
     top: 0;
-    content: "";
+    /*加载表面取消注释就行*/
+/*    content: "";*/
 }
 
 .bg-cover .container {
@@ -577,15 +578,15 @@ header .go-back i {
 }
 
 .bg-cover .title {
-    font-size: 4rem;
+    font-size: 7rem;
     line-height: 1.85em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
 }
 
 .bg-cover .description {
     font-weight: 300;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.4em;
     color: #eee;
 }
