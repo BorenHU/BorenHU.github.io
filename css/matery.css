@@ -215,6 +215,7 @@ pre[class*="language-"] {
 b,
 strong {
     font-weight: bold;
+    font-size: 20px;
 }
 
 dfn {
@@ -248,7 +249,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #000384 0%, #6dc4e0 100%);
+    background-image: linear-gradient(to right, #222529 0%, #194958 100%);
 }
 
 .text-color {
@@ -505,7 +506,7 @@ header .side-nav .social-link {
 
 .cover-social-link {
     position: relative;
-    top: 23vh;
+    top: 18vh;
     width: 100%;
     text-align: center;
 }
@@ -585,10 +586,11 @@ header .go-back i {
 }
 
 .bg-cover .description {
-    font-weight: 300;
+    font-weight: 450;
     font-size: 1.35rem;
     line-height: 1.4em;
     color: #eee;
+    
 }
 
 .bg-cover .post-title {
