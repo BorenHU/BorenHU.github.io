@@ -6,17 +6,17 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://huqifa.com/"/>
-  <updated>2020-03-19T05:03:03.606Z</updated>
+  <updated>2020-03-19T07:50:14.915Z</updated>
   <id>http://huqifa.com/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>计算机系统基础知识</title>
-    <link href="http://huqifa.com/2020/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    <id>http://huqifa.com/2020/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
-    <published>2020-03-18T16:39:38.000Z</published>
-    <updated>2020-03-19T05:03:03.606Z</updated>
+    <title>操作系统概述</title>
+    <link href="http://huqifa.com/2020/03/19/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"/>
+    <id>http://huqifa.com/2020/03/19/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</id>
+    <published>2020-03-19T07:46:53.000Z</published>
+    <updated>2020-03-19T07:50:14.915Z</updated>
     
     <summary type="html">
     
@@ -24,7 +24,39 @@
       
         
         
-          &lt;h2 id=&quot;计算机系统基础知识&quot;&gt;&lt;a href=&quot;#计算机系统基础知识&quot; class=&quot;headerlink&quot; title=&quot;计算机系统基础知识&quot;&gt;&lt;/a&gt;计算机系统基础知识&lt;/h2&gt;&lt;h3 id=&quot;1-1-计算机系统的基本组成&quot;&gt;&lt;a
+          &lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return; }
+       
+        
+      
+    
+    </summary>
+    
+    
+      <category term="操作系统" scheme="http://huqifa.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+      <category term="操作系统" scheme="http://huqifa.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机系统概述</title>
+    <link href="http://huqifa.com/2020/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"/>
+    <id>http://huqifa.com/2020/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</id>
+    <published>2020-03-18T16:39:38.000Z</published>
+    <updated>2020-03-19T07:48:48.705Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;计算机系统基础知识&quot;&gt;&lt;a href=&quot;#计算机系统基础知识&quot; class=&quot;headerlink&quot; title=&quot;计算机系统基础知识&quot;&gt;&lt;/a&gt;计算机系统基础知识&lt;/h2&gt;&lt;hr&gt;
+&lt;h3 id=&quot;1-1-计算机系统的基本组成&quot;&gt;&lt;a
         
       
     
@@ -135,7 +167,7 @@
     <link href="http://huqifa.com/2020/03/03/GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://huqifa.com/2020/03/03/GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2020-03-03T14:08:38.643Z</published>
-    <updated>2020-03-11T01:14:34.722Z</updated>
+    <updated>2020-03-19T06:19:37.336Z</updated>
     
     <summary type="html">
     
@@ -157,7 +189,7 @@
     
       <category term="Hexo" scheme="http://huqifa.com/tags/Hexo/"/>
     
-      <category term="github" scheme="http://huqifa.com/tags/github/"/>
+      <category term="Github" scheme="http://huqifa.com/tags/Github/"/>
     
       <category term="博客搭建" scheme="http://huqifa.com/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
