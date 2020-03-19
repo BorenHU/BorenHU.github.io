@@ -39,6 +39,98 @@
   </entry>
   
   <entry>
+    <title>JavaGuI入门</title>
+    <link href="http://huqifa.com/2020/03/18/JavaGuI%E5%85%A5%E9%97%A8/"/>
+    <id>http://huqifa.com/2020/03/18/JavaGuI%E5%85%A5%E9%97%A8/</id>
+    <published>2020-03-17T16:11:49.000Z</published>
+    <updated>2020-03-19T06:00:30.357Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;GUI介绍&quot;&gt;&lt;a href=&quot;#GUI介绍&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/tags/Java/"/>
+    
+      <category term="GUI" scheme="http://huqifa.com/tags/GUI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java多线程编程</title>
+    <link href="http://huqifa.com/2020/03/17/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/"/>
+    <id>http://huqifa.com/2020/03/17/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</id>
+    <published>2020-03-17T11:40:22.000Z</published>
+    <updated>2020-03-19T06:00:36.969Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Java多线程编程&quot;&gt;&lt;a href=&quot;#Java多线程编程&quot; class=&quot;headerlink&quot; title=&quot;Java多线程编程&quot;&gt;&lt;/a&gt;Java多线程编程&lt;/h2&gt;&lt;p&gt;java给多线程编程提供了内置的支持。&lt;/p&gt;
+&lt;p&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/tags/Java/"/>
+    
+      <category term="多线程" scheme="http://huqifa.com/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java垃圾回收机制</title>
+    <link href="http://huqifa.com/2020/03/12/Java%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/"/>
+    <id>http://huqifa.com/2020/03/12/Java%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</id>
+    <published>2020-03-12T06:07:30.000Z</published>
+    <updated>2020-03-19T06:00:42.760Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Java-虚拟机&quot;&gt;&lt;a href=&quot;#Java-虚拟机&quot; class=&quot;headerlink&quot; title=&quot;Java 虚拟机&quot;&gt;&lt;/a&gt;Java 虚拟机&lt;/h2&gt;&lt;p&gt;Java虚拟机的内存可以分为三个区域：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;栈
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/tags/Java/"/>
+    
+      <category term="虚拟机" scheme="http://huqifa.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+      <category term="垃圾回收" scheme="http://huqifa.com/tags/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>GitHub+Hexo搭建个人博客</title>
     <link href="http://huqifa.com/2020/03/03/GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://huqifa.com/2020/03/03/GitHub+Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
