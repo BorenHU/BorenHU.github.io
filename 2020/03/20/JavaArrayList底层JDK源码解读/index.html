@@ -4,9 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JavaGuI入门, Cloud computing,Big data,姬发,JF,Java,云计算,大数据,齐发,启发,胡齐发,Hqia,Huqia">
-    <meta name="description" content="GUI介绍
-早期，电脑向用户提供的是单调、枯燥、纯字符状态的“命令行界面（CLI）”。就是到现在，我们还可以依稀看到它们的身影：在Windows中开个DOS窗口，就可看到历史的足迹。后来，Apple公司率先在电脑的操作系统中实现了图形化的用">
+    <meta name="keywords" content="JavaArrayList底层_JDK源码解读, Cloud computing,Big data,姬发,JF,Java,云计算,大数据,齐发,启发,胡齐发,Hqia,Huqia">
+    <meta name="description" content="ArrayList_索引和_顺序相关方法
+List是有序，可重复的容器。
+
+
+有序：List中每个元素都有索引标记。可以根据元素的索引标记（在List中的位置）访问元素，从而精确控制这些元素。
+可重复：List允许加入重复的元素。更确切地讲">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>JavaGuI入门 | JF&#39;s Blog</title>
+    <title>JavaArrayList底层_JDK源码解读 | JF&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -581,12 +585,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/36.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JavaGuI入门</h1>
+                    <h1 class="description center-align post-title">JavaArrayList底层_JDK源码解读</h1>
                 </div>
             </div>
         </div>
@@ -707,8 +711,8 @@
                                 <span class="chip bg-color">Java</span>
                             </a>
                         
-                            <a href="/tags/GUI/">
-                                <span class="chip bg-color">GUI</span>
+                            <a href="/tags/ArrayList/">
+                                <span class="chip bg-color">ArrayList</span>
                             </a>
                         
                     </div>
@@ -732,28 +736,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-18
+                    2020-03-20
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-19
+                    2020-03-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    958
+                    179
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 				
@@ -769,327 +773,16 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="GUI介绍"><a href="#GUI介绍" class="headerlink" title="GUI介绍"></a>GUI介绍</h2><ul>
-<li>早期，电脑向用户提供的是单调、枯燥、纯字符状态的“命令行界面（CLI）”。就是到现在，我们还可以依稀看到它们的身影：在Windows中开个DOS窗口，就可看到历史的足迹。后来，Apple公司率先在电脑的操作系统中实现了图形化的用户界面（Graphical User Interface，简称GUI），但由于Apple公司封闭的市场策略，自己完成电脑硬件、操作系统、应用软件一条龙的产品，与其它PC不兼容。这使得Apple公司错过了一次一统全球PC的好机会。</li>
-<li>后来，Microsoft公司推出了风靡全球的Windows操作系统，它凭借着优秀的图形化用户界面，一举奠定了操作系统标准的地位。这也造就了世界首富—比尔.盖茨和IT业的泰山北斗微软公司。</li>
-<li>在这图形用户界面风行于世的今天，一个应用软件没有良好的GUI是无法让用户接受的。而Java语言也深知这一点的重要性，它提供了一套可以轻松构建GUI的工具。在本章和下一章中，我们将向你充分证明这一点。</li>
-</ul>
-<h2 id="Java提供了三个主要包做GUI开发"><a href="#Java提供了三个主要包做GUI开发" class="headerlink" title="Java提供了三个主要包做GUI开发"></a>Java提供了三个主要包做GUI开发</h2><ul>
-<li>java.awt 包 - 主要提供字体/布局管理器</li>
-<li>javax.swing 包[商业开发常用] - 主要提供各种组件（按钮/窗口/文本框）</li>
-<li>java.awt.event 包 - 事件处理，后台功能实现。</li>
-</ul>
-<h3 id="Swing组件"><a href="#Swing组件" class="headerlink" title="Swing组件"></a>Swing组件</h3><blockquote>
-<p>swing组件主要分为三个部分</p>
+                <h2 id="ArrayList-索引和-顺序相关方法"><a href="#ArrayList-索引和-顺序相关方法" class="headerlink" title="ArrayList_索引和_顺序相关方法"></a>ArrayList_索引和_顺序相关方法</h2><blockquote>
+<p>List是有序，可重复的容器。</p>
 </blockquote>
-<ol>
-<li>顶层容器 ：JFrame，JDialog</li>
-<li>中间容器 ：JPanel，JOptionPane,JScrollPane,JLayeredPane(主要以Panel结尾)</li>
-<li>基本组件 ：JLable,JButton,JTextField,JPasswordField,JRadioButton</li>
-</ol>
-<p><img src="/images/loading.gif" data-original="https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/5.jpg" alt=""></p>
-<h3 id="顶层组件类"><a href="#顶层组件类" class="headerlink" title="顶层组件类"></a>顶层组件类</h3><table>
-<thead>
-<tr>
-<th></th>
-<th align="left"></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td align="left">JFrame</td>
-<td>窗口(绝大多数Swing图形界面程序使用JFrame作为顶层容器)</td>
-</tr>
-<tr>
-<td>2</td>
-<td align="left">JDialog</td>
-<td>对话框</td>
-</tr>
-</tbody></table>
-<h3 id="中间组件类"><a href="#中间组件类" class="headerlink" title="中间组件类"></a>中间组件类</h3><table>
-<thead>
-<tr>
-<th></th>
-<th>组件</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>JPanel</td>
-<td>一般轻量级面板容器组件(作为JFrame中间容器)</td>
-</tr>
-<tr>
-<td>2</td>
-<td>JScrollPane</td>
-<td>带滚动条的，可以水平和垂直滚动的面板组件</td>
-</tr>
-<tr>
-<td>3</td>
-<td>JSplitPane</td>
-<td>分隔面板</td>
-</tr>
-<tr>
-<td>4</td>
-<td>JTabbedPane</td>
-<td>选项卡面板</td>
-</tr>
-<tr>
-<td>5</td>
-<td>JLayeredPane</td>
-<td>层级面板</td>
-</tr>
-</tbody></table>
-<h3 id="基本组件类"><a href="#基本组件类" class="headerlink" title="基本组件类"></a>基本组件类</h3><table>
-<thead>
-<tr>
-<th></th>
-<th>组件</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>JLable</td>
-<td>标签</td>
-</tr>
-<tr>
-<td>2</td>
-<td>JButton</td>
-<td>按钮</td>
-</tr>
-<tr>
-<td>3</td>
-<td>JRadioButton</td>
-<td>单选按钮</td>
-</tr>
-<tr>
-<td>4</td>
-<td>JCheckBox</td>
-<td>复选框</td>
-</tr>
-<tr>
-<td>5</td>
-<td>JToggleButton</td>
-<td>开关按钮</td>
-</tr>
-<tr>
-<td>6</td>
-<td>JTextField</td>
-<td>文本框</td>
-</tr>
-<tr>
-<td>7</td>
-<td>JPasswordField</td>
-<td>密码框</td>
-</tr>
-<tr>
-<td>8</td>
-<td>JTextArea</td>
-<td>文本区域</td>
-</tr>
-<tr>
-<td>9</td>
-<td>JComboBox</td>
-<td>下拉列表框</td>
-</tr>
-<tr>
-<td>10</td>
-<td>JList</td>
-<td>列表</td>
-</tr>
-<tr>
-<td>11</td>
-<td>JProgressBar</td>
-<td>进度条</td>
-</tr>
-<tr>
-<td>12</td>
-<td>JSlider</td>
-<td>滑块</td>
-</tr>
-</tbody></table>
-<h3 id="JFrame组件"><a href="#JFrame组件" class="headerlink" title="JFrame组件"></a>JFrame组件</h3><table>
-<thead>
-<tr>
-<th align="left">JFrame frame = new JFrame(“”)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">// 创建及设置窗口</td>
-</tr>
-<tr>
-<td align="left">frame.setDefaultLookAndFeelDecorated(true)</td>
-</tr>
-<tr>
-<td align="left">// 确保一个漂亮的外观风格</td>
-</tr>
-<tr>
-<td align="left">frame.serDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)</td>
-</tr>
-<tr>
-<td align="left">//设置默认的关闭窗口</td>
-</tr>
-<tr>
-<td align="left">frame.pack()</td>
-</tr>
-<tr>
-<td align="left">// 显示窗口</td>
-</tr>
-<tr>
-<td align="left">frame.serVisible(true)</td>
-</tr>
-<tr>
-<td align="left">//这个最好放在最后，不然会出现视图看不到的情况</td>
-</tr>
-<tr>
-<td align="left">frame.serBounds(600,300,500,400)</td>
-</tr>
-<tr>
-<td align="left">//设置窗口的x,y位置，窗口大小x,y.</td>
-</tr>
-<tr>
-<td align="left">frame.add(panel)</td>
-</tr>
-<tr>
-<td align="left">//添加panel面板到容器</td>
-</tr>
-<tr>
-<td align="left">frmlpa.getContentPane().add(panel,BorderLayout.NORTH)</td>
-</tr>
-<tr>
-<td align="left">//添加面板到主窗口，布局在北面</td>
-</tr>
-<tr>
-<td align="left">frmlpa.getContentPane().add(scrollPane,BorderLayout.CENTER)</td>
-</tr>
-<tr>
-<td align="left">//添加可滚动面板到主窗口，布局在中间</td>
-</tr>
-</tbody></table>
-<h3 id="Panel组件"><a href="#Panel组件" class="headerlink" title="Panel组件"></a>Panel组件</h3><p>Jpanel</p>
-<table>
-<thead>
-<tr>
-<th>JPanel panel = new JPanel（）；</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>//创建面板容器</td>
-</tr>
-<tr>
-<td>panel.add（button）</td>
-</tr>
-<tr>
-<td>//添加按钮到面板</td>
-</tr>
-</tbody></table>
-<p>JOptionPane</p>
-<table>
-<thead>
-<tr>
-<th>JOptionPane.showMessageDialog(panel3, “没有选中任何文件”, “提示”, JOptionPane.WARNING_MESSAGE);</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>//弹出提示框到panel容器</td>
-</tr>
-</tbody></table>
-<p>JScrollPane</p>
-<table>
-<thead>
-<tr>
-<th>JScrollPane scrollPane = new JScrollPane();</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>创建可滚动面板</td>
-</tr>
-<tr>
-<td>scrollPane.setViewportView(textArea);</td>
-</tr>
-<tr>
-<td>设置面板内容</td>
-</tr>
-</tbody></table>
-<h3 id="功能组件"><a href="#功能组件" class="headerlink" title="功能组件"></a>功能组件</h3><ul>
-<li>JLable</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>JLabel label = new JLabel(“Hello World”);</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>添加标签</td>
-</tr>
-</tbody></table>
 <ul>
-<li>Jbutton</li>
+<li>有序：List中每个元素都有索引标记。可以根据元素的索引标记（在List中的位置）访问元素，从而精确控制这些元素。</li>
+<li>可重复：List允许加入重复的元素。更确切地讲，List通常允许满足e1.equals（e2）的元素重复加入容器。</li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>JButton button = new JButton(“选择文件”);</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>创建按钮</td>
-</tr>
-<tr>
-<td>button.addActionListener(new ActionListener() {}</td>
-</tr>
-<tr>
-<td>添加操作按钮后的事件监听器</td>
-</tr>
-</tbody></table>
-<ul>
-<li>JFileChooser</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>jfc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES );</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>//设置文本对话框</td>
-</tr>
-<tr>
-<td>jfc.showSaveDialog(frmIpa);</td>
-</tr>
-<tr>
-<td>//显示打开的文件对话框</td>
-</tr>
-<tr>
-<td>jfc.getSelectedFile();</td>
-</tr>
-<tr>
-<td>//获取选择器选择文件</td>
-</tr>
-</tbody></table>
-<ul>
-<li>JTextArea</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>JTextArea textArea = new JTextArea();</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>创建文本区域</td>
-</tr>
-<tr>
-<td>textArea.setText(content);</td>
-</tr>
-<tr>
-<td>设置内容</td>
-</tr>
-</tbody></table>
-<script>
+<p><b>List接口常用的实现类有3个：ArrayList（数组），LinkedList（链表）和Vector（线程安全_数组）。</b></p><b>
+<p><img src="/images/loading.gif" data-original="https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/10.jpg" alt=""></p>
+</b><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -1124,8 +817,8 @@
                                     <span class="chip bg-color">Java</span>
                                 </a>
                             
-                                <a href="/tags/GUI/">
-                                    <span class="chip bg-color">GUI</span>
+                                <a href="/tags/ArrayList/">
+                                    <span class="chip bg-color">ArrayList</span>
                                 </a>
                             
                         </div>
@@ -1299,7 +992,7 @@
         repo: 'Contact',
         owner: 'BorenHU',
         admin: "BorenHU",
-        id: '2020-03-18T00-11-49',
+        id: '2020-03-20T00-35-39',
         distractionFreeMode: true  // Facebook-like distraction free mode
     });
 
@@ -1342,89 +1035,34 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">
+                <a href="/2020/03/20/JavaArrayList%E5%BA%95%E5%B1%82JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/">
                     <div class="card-image">
                         
                         
-                        <img src="/images/loading.gif" data-original="/medias/featureimages/12.jpg" class="responsive-img" alt="计算机系统概述">
+                        <img src="/images/loading.gif" data-original="/medias/featureimages/36.jpg" class="responsive-img" alt="JavaArrayList底层_JDK源码解读">
                         
-                        <span class="card-title">计算机系统概述</span>
+                        <span class="card-title">JavaArrayList底层_JDK源码解读</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            计算机系统基础知识
-1.1 计算机系统的基本组成​        计算机系统是由硬件系统和软件系统组成，计算机硬件是物理装置，计算机软件是程序，数据和相关文档的集合。
-计算机系统的基本组成：
-
-1. 计算机硬件​        基本的计算机
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/" class="post-category">
-                                    计算机系统
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/">
-                        <span class="chip bg-color">计算机系统</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/03/17/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/images/loading.gif" data-original="/medias/featureimages/22.jpg" class="responsive-img" alt="Java多线程编程">
-                        
-                        <span class="card-title">Java多线程编程</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Java多线程编程java给多线程编程提供了内置的支持。
+                            ArrayList_索引和_顺序相关方法
+List是有序，可重复的容器。
 
 
-多线程：是多任务的一种特别的形式。
-
-
-进程：一个进程包括操作系统分配的内存空间，包含一个或多个线程。
-
-一个线程不能独立存在，它必须是进程的一部分。一个进程一直运行，直到所有的
+有序：List中每个元素都有索引标记。可以根据元素的索引标记（在List中的位置）访问元素，从而精确控制这些元素。
+可重复：List允许加入重复的元素。更确切地讲
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-20
                             </span>
                         <span class="publish-author">
                             
@@ -1438,6 +1076,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1445,8 +1084,64 @@
                         <span class="chip bg-color">Java</span>
                     </a>
                     
-                    <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">
-                        <span class="chip bg-color">多线程</span>
+                    <a href="/tags/ArrayList/">
+                        <span class="chip bg-color">ArrayList</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/03/19/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/images/loading.gif" data-original="/medias/featureimages/10.jpg" class="responsive-img" alt="程序设计语言概述">
+                        
+                        <span class="card-title">程序设计语言概述</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">
+                                    程序设计
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/">
+                        <span class="chip bg-color">程序设计</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/">
+                        <span class="chip bg-color">语言处理</span>
                     </a>
                     
                 </div>

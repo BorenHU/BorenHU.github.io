@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JavaGuI入门, Cloud computing,Big data,姬发,JF,Java,云计算,大数据,齐发,启发,胡齐发,Hqia,Huqia">
-    <meta name="description" content="GUI介绍
-早期，电脑向用户提供的是单调、枯燥、纯字符状态的“命令行界面（CLI）”。就是到现在，我们还可以依稀看到它们的身影：在Windows中开个DOS窗口，就可看到历史的足迹。后来，Apple公司率先在电脑的操作系统中实现了图形化的用">
+    <meta name="keywords" content="标签: 程序设计, Cloud computing,Big data,姬发,JF,Java,云计算,大数据,齐发,启发,胡齐发,Hqia,Huqia">
+    <meta name="description" content="标签: 程序设计 | JF&#39;s Blog">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>JavaGuI入门 | JF&#39;s Blog</title>
+    <title>标签: 程序设计 | JF&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -577,1044 +576,213 @@
 
 </header>
 
-    
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                HuqiA
+                
+            </div>
 
-
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">JavaGuI入门</h1>
-                </div>
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: ['Never really desperate, only the lost of the soul','从来没有真正的绝境, 只有心灵的迷途'],
+                        startDelay: 300,
+                        typeSpeed: 78,
+                        loop: false,
+                        backSpeed: 40,
+                        showCursor: false
+                    });
+                </script>
+                
             </div>
         </div>
     </div>
 </div>
 
 
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+</script>
 
 
-<main class="post-container content">
+    </div>
+</div>
+
+<main class="content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1::before,
-    #articleContent h2::before,
-    #articleContent h3::before,
-    #articleContent h4::before,
-    #articleContent h5::before,
-    #articleContent h6::before {
-        display: block;
-        content: " ";
-        height: 100px;
-        margin-top: -100px;
-        visibility: hidden;
-    }
 
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 64px;
-    }
-
-    .toc-widget {
-        width: 345px;
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        margin: 35px 0 15px 0;
-        padding-left: 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content {
-        height: calc(100vh - 250px);
-        overflow: auto;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #toc-content .is-active-link::before {
-        background-color: #42b983;
-    }
-
-    #floating-toc-btn {
-        position: fixed;
-        right: 15px;
-        bottom: 76px;
-        padding-top: 15px;
-        margin-bottom: 0;
-        z-index: 998;
-    }
-
-    #floating-toc-btn .btn-floating {
-        width: 48px;
-        height: 48px;
-    }
-
-    #floating-toc-btn .btn-floating i {
-        line-height: 48px;
-        font-size: 1.4rem;
-    }
-</style>
-<div class="row">
-    <div id="main-content" class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
-<div id="artDetail">
+<div id="tags" class="container chip-container">
     <div class="card">
-        <div class="card-content article-info">
-            <div class="row tag-cate">
-                <div class="col s7">
-                    
-                    <div class="article-tag">
-                        
-                            <a href="/tags/Java/">
-                                <span class="chip bg-color">Java</span>
-                            </a>
-                        
-                            <a href="/tags/GUI/">
-                                <span class="chip bg-color">GUI</span>
-                            </a>
-                        
-                    </div>
-                    
-                </div>
-                <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/Java/" class="post-category">
-                                Java
-                            </a>
-                        
-                    </div>
-                    
-                </div>
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
             </div>
-
-            <div class="post-info">
+            <div class="tag-chips">
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-18
-                </div>
                 
-
+                <a href="/tags/Java/" title="Java: 4">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Java" style="background-color: #F9EBEA;">Java
+                        <span class="tag-length">4</span>
+                    </span>
+                </a>
                 
-                <div class="post-date info-break-policy">
-                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-19
-                </div>
                 
-
+                <a href="/tags/ArrayList/" title="ArrayList: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="ArrayList" style="background-color: #F5EEF8;">ArrayList
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
-                <div class="info-break-policy">
-                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    958
-                </div>
                 
-
+                <a href="/tags/GUI/" title="GUI: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="GUI" style="background-color: #D5F5E3;">GUI
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
-                <div class="info-break-policy">
-                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
-                </div>
                 
-				
+                <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" title="多线程: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="多线程" style="background-color: #E8F8F5;">多线程
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
-                    <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
-                        <span id="busuanzi_value_page_pv"></span>
-                    </div>
-				
+                
+                <a href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" title="程序设计: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="程序设计" style="background-color: #FEF9E7;">程序设计
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/" title="语言处理: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="语言处理" style="background-color: #F8F9F9;">语言处理
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Hexo/" title="Hexo: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Hexo" style="background-color: #82E0AA;">Hexo
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Github/" title="Github: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Github" style="background-color: #D7BDE2;">Github
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="博客搭建: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="博客搭建" style="background-color: #A3E4D7;">博客搭建
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" title="虚拟机: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="虚拟机" style="background-color: #85C1E9;">虚拟机
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/" title="垃圾回收: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="垃圾回收" style="background-color: #F8C471;">垃圾回收
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/" title="计算机系统: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="计算机系统" style="background-color: #F9E79F;">计算机系统
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
-            
         </div>
-        <hr class="clearfix">
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <h2 id="GUI介绍"><a href="#GUI介绍" class="headerlink" title="GUI介绍"></a>GUI介绍</h2><ul>
-<li>早期，电脑向用户提供的是单调、枯燥、纯字符状态的“命令行界面（CLI）”。就是到现在，我们还可以依稀看到它们的身影：在Windows中开个DOS窗口，就可看到历史的足迹。后来，Apple公司率先在电脑的操作系统中实现了图形化的用户界面（Graphical User Interface，简称GUI），但由于Apple公司封闭的市场策略，自己完成电脑硬件、操作系统、应用软件一条龙的产品，与其它PC不兼容。这使得Apple公司错过了一次一统全球PC的好机会。</li>
-<li>后来，Microsoft公司推出了风靡全球的Windows操作系统，它凭借着优秀的图形化用户界面，一举奠定了操作系统标准的地位。这也造就了世界首富—比尔.盖茨和IT业的泰山北斗微软公司。</li>
-<li>在这图形用户界面风行于世的今天，一个应用软件没有良好的GUI是无法让用户接受的。而Java语言也深知这一点的重要性，它提供了一套可以轻松构建GUI的工具。在本章和下一章中，我们将向你充分证明这一点。</li>
-</ul>
-<h2 id="Java提供了三个主要包做GUI开发"><a href="#Java提供了三个主要包做GUI开发" class="headerlink" title="Java提供了三个主要包做GUI开发"></a>Java提供了三个主要包做GUI开发</h2><ul>
-<li>java.awt 包 - 主要提供字体/布局管理器</li>
-<li>javax.swing 包[商业开发常用] - 主要提供各种组件（按钮/窗口/文本框）</li>
-<li>java.awt.event 包 - 事件处理，后台功能实现。</li>
-</ul>
-<h3 id="Swing组件"><a href="#Swing组件" class="headerlink" title="Swing组件"></a>Swing组件</h3><blockquote>
-<p>swing组件主要分为三个部分</p>
-</blockquote>
-<ol>
-<li>顶层容器 ：JFrame，JDialog</li>
-<li>中间容器 ：JPanel，JOptionPane,JScrollPane,JLayeredPane(主要以Panel结尾)</li>
-<li>基本组件 ：JLable,JButton,JTextField,JPasswordField,JRadioButton</li>
-</ol>
-<p><img src="/images/loading.gif" data-original="https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/5.jpg" alt=""></p>
-<h3 id="顶层组件类"><a href="#顶层组件类" class="headerlink" title="顶层组件类"></a>顶层组件类</h3><table>
-<thead>
-<tr>
-<th></th>
-<th align="left"></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td align="left">JFrame</td>
-<td>窗口(绝大多数Swing图形界面程序使用JFrame作为顶层容器)</td>
-</tr>
-<tr>
-<td>2</td>
-<td align="left">JDialog</td>
-<td>对话框</td>
-</tr>
-</tbody></table>
-<h3 id="中间组件类"><a href="#中间组件类" class="headerlink" title="中间组件类"></a>中间组件类</h3><table>
-<thead>
-<tr>
-<th></th>
-<th>组件</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>JPanel</td>
-<td>一般轻量级面板容器组件(作为JFrame中间容器)</td>
-</tr>
-<tr>
-<td>2</td>
-<td>JScrollPane</td>
-<td>带滚动条的，可以水平和垂直滚动的面板组件</td>
-</tr>
-<tr>
-<td>3</td>
-<td>JSplitPane</td>
-<td>分隔面板</td>
-</tr>
-<tr>
-<td>4</td>
-<td>JTabbedPane</td>
-<td>选项卡面板</td>
-</tr>
-<tr>
-<td>5</td>
-<td>JLayeredPane</td>
-<td>层级面板</td>
-</tr>
-</tbody></table>
-<h3 id="基本组件类"><a href="#基本组件类" class="headerlink" title="基本组件类"></a>基本组件类</h3><table>
-<thead>
-<tr>
-<th></th>
-<th>组件</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>1</td>
-<td>JLable</td>
-<td>标签</td>
-</tr>
-<tr>
-<td>2</td>
-<td>JButton</td>
-<td>按钮</td>
-</tr>
-<tr>
-<td>3</td>
-<td>JRadioButton</td>
-<td>单选按钮</td>
-</tr>
-<tr>
-<td>4</td>
-<td>JCheckBox</td>
-<td>复选框</td>
-</tr>
-<tr>
-<td>5</td>
-<td>JToggleButton</td>
-<td>开关按钮</td>
-</tr>
-<tr>
-<td>6</td>
-<td>JTextField</td>
-<td>文本框</td>
-</tr>
-<tr>
-<td>7</td>
-<td>JPasswordField</td>
-<td>密码框</td>
-</tr>
-<tr>
-<td>8</td>
-<td>JTextArea</td>
-<td>文本区域</td>
-</tr>
-<tr>
-<td>9</td>
-<td>JComboBox</td>
-<td>下拉列表框</td>
-</tr>
-<tr>
-<td>10</td>
-<td>JList</td>
-<td>列表</td>
-</tr>
-<tr>
-<td>11</td>
-<td>JProgressBar</td>
-<td>进度条</td>
-</tr>
-<tr>
-<td>12</td>
-<td>JSlider</td>
-<td>滑块</td>
-</tr>
-</tbody></table>
-<h3 id="JFrame组件"><a href="#JFrame组件" class="headerlink" title="JFrame组件"></a>JFrame组件</h3><table>
-<thead>
-<tr>
-<th align="left">JFrame frame = new JFrame(“”)</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">// 创建及设置窗口</td>
-</tr>
-<tr>
-<td align="left">frame.setDefaultLookAndFeelDecorated(true)</td>
-</tr>
-<tr>
-<td align="left">// 确保一个漂亮的外观风格</td>
-</tr>
-<tr>
-<td align="left">frame.serDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)</td>
-</tr>
-<tr>
-<td align="left">//设置默认的关闭窗口</td>
-</tr>
-<tr>
-<td align="left">frame.pack()</td>
-</tr>
-<tr>
-<td align="left">// 显示窗口</td>
-</tr>
-<tr>
-<td align="left">frame.serVisible(true)</td>
-</tr>
-<tr>
-<td align="left">//这个最好放在最后，不然会出现视图看不到的情况</td>
-</tr>
-<tr>
-<td align="left">frame.serBounds(600,300,500,400)</td>
-</tr>
-<tr>
-<td align="left">//设置窗口的x,y位置，窗口大小x,y.</td>
-</tr>
-<tr>
-<td align="left">frame.add(panel)</td>
-</tr>
-<tr>
-<td align="left">//添加panel面板到容器</td>
-</tr>
-<tr>
-<td align="left">frmlpa.getContentPane().add(panel,BorderLayout.NORTH)</td>
-</tr>
-<tr>
-<td align="left">//添加面板到主窗口，布局在北面</td>
-</tr>
-<tr>
-<td align="left">frmlpa.getContentPane().add(scrollPane,BorderLayout.CENTER)</td>
-</tr>
-<tr>
-<td align="left">//添加可滚动面板到主窗口，布局在中间</td>
-</tr>
-</tbody></table>
-<h3 id="Panel组件"><a href="#Panel组件" class="headerlink" title="Panel组件"></a>Panel组件</h3><p>Jpanel</p>
-<table>
-<thead>
-<tr>
-<th>JPanel panel = new JPanel（）；</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>//创建面板容器</td>
-</tr>
-<tr>
-<td>panel.add（button）</td>
-</tr>
-<tr>
-<td>//添加按钮到面板</td>
-</tr>
-</tbody></table>
-<p>JOptionPane</p>
-<table>
-<thead>
-<tr>
-<th>JOptionPane.showMessageDialog(panel3, “没有选中任何文件”, “提示”, JOptionPane.WARNING_MESSAGE);</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>//弹出提示框到panel容器</td>
-</tr>
-</tbody></table>
-<p>JScrollPane</p>
-<table>
-<thead>
-<tr>
-<th>JScrollPane scrollPane = new JScrollPane();</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>创建可滚动面板</td>
-</tr>
-<tr>
-<td>scrollPane.setViewportView(textArea);</td>
-</tr>
-<tr>
-<td>设置面板内容</td>
-</tr>
-</tbody></table>
-<h3 id="功能组件"><a href="#功能组件" class="headerlink" title="功能组件"></a>功能组件</h3><ul>
-<li>JLable</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>JLabel label = new JLabel(“Hello World”);</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>添加标签</td>
-</tr>
-</tbody></table>
-<ul>
-<li>Jbutton</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>JButton button = new JButton(“选择文件”);</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>创建按钮</td>
-</tr>
-<tr>
-<td>button.addActionListener(new ActionListener() {}</td>
-</tr>
-<tr>
-<td>添加操作按钮后的事件监听器</td>
-</tr>
-</tbody></table>
-<ul>
-<li>JFileChooser</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>jfc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES );</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>//设置文本对话框</td>
-</tr>
-<tr>
-<td>jfc.showSaveDialog(frmIpa);</td>
-</tr>
-<tr>
-<td>//显示打开的文件对话框</td>
-</tr>
-<tr>
-<td>jfc.getSelectedFile();</td>
-</tr>
-<tr>
-<td>//获取选择器选择文件</td>
-</tr>
-</tbody></table>
-<ul>
-<li>JTextArea</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>JTextArea textArea = new JTextArea();</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>创建文本区域</td>
-</tr>
-<tr>
-<td>textArea.setText(content);</td>
-</tr>
-<tr>
-<td>设置内容</td>
-</tr>
-</tbody></table>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
-            </div>
-            <hr/>
+    </div>
+</div>
 
+    
+
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
             
-
-
-
-            <div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="程序设计, 语言处理" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2020/03/19/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%E6%A6%82%E8%BF%B0/">
+                        <div class="card-image tag-image">
                             
-                                <a href="/tags/Java/">
-                                    <span class="chip bg-color">Java</span>
-                                </a>
                             
-                                <a href="/tags/GUI/">
-                                    <span class="chip bg-color">GUI</span>
-                                </a>
+                            <img src="/images/loading.gif" data-original="/medias/featureimages/10.jpg" class="responsive-img" alt="程序设计语言概述">
                             
+                            <span class="card-title">程序设计语言概述</span>
                         </div>
-                    
-                </div>
-                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
-                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
-
-<div id="article-share">
-    
-    
-    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-    <script src="/libs/share/js/social-share.min.js"></script>
-    
-
-    
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid="></script>
-    <div class="addthis_inline_share_toolbox"></div>
-    
-
-</div>
-
-                </div>
-            </div>
-            
-                <style>
-    #reward {
-        margin: 40px 0;
-        text-align: center;
-    }
-
-    #reward .reward-link {
-        font-size: 1.4rem;
-        line-height: 38px;
-    }
-
-    #reward .btn-floating:hover {
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    #rewardModal {
-        width: 320px;
-        height: 350px;
-    }
-
-    #rewardModal .reward-title {
-        margin: 15px auto;
-        padding-bottom: 5px;
-    }
-
-    #rewardModal .modal-content {
-        padding: 10px;
-    }
-
-    #rewardModal .close {
-        position: absolute;
-        right: 15px;
-        top: 15px;
-        color: rgba(0, 0, 0, 0.5);
-        font-size: 1.3rem;
-        line-height: 20px;
-        cursor: pointer;
-    }
-
-    #rewardModal .close:hover {
-        color: #ef5350;
-        transform: scale(1.3);
-        -moz-transform:scale(1.3);
-        -webkit-transform:scale(1.3);
-        -o-transform:scale(1.3);
-    }
-
-    #rewardModal .reward-tabs {
-        margin: 0 auto;
-        width: 210px;
-    }
-
-    .reward-tabs .tabs {
-        height: 38px;
-        margin: 10px auto;
-        padding-left: 0;
-    }
-
-    .reward-content ul {
-        padding-left: 0 !important;
-    }
-
-    .reward-tabs .tabs .tab {
-        height: 38px;
-        line-height: 38px;
-    }
-
-    .reward-tabs .tab a {
-        color: #fff;
-        background-color: #ccc;
-    }
-
-    .reward-tabs .tab a:hover {
-        background-color: #ccc;
-        color: #fff;
-    }
-
-    .reward-tabs .wechat-tab .active {
-        color: #fff !important;
-        background-color: #22AB38 !important;
-    }
-
-    .reward-tabs .alipay-tab .active {
-        color: #fff !important;
-        background-color: #019FE8 !important;
-    }
-
-    .reward-tabs .reward-img {
-        width: 210px;
-        height: 210px;
-    }
-</style>
-
-<div id="reward">
-    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
-
-    <!-- Modal Structure -->
-    <div id="rewardModal" class="modal">
-        <div class="modal-content">
-            <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">你的赏识是我前进的动力</h4>
-            <div class="reward-content">
-                <div class="reward-tabs">
-                    <ul class="tabs row">
-                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
-                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
-                    </ul>
-                    <div id="alipay">
-                        <img src="/images/loading.gif" data-original="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
-                    </div>
-                    <div id="wechat">
-                        <img src="/images/loading.gif" data-original="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    $(function () {
-        $('.tabs').tabs();
-    });
-</script>
-            
-        </div>
-    </div>
-
-    
-        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
-<link rel="stylesheet" href="/css/my-gitalk.css">
-
-<div class="card gitalk-card" data-aos="fade-up">
-    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
-        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
-        <span>评论</span>
-    </div>
-    <div id="gitalk-container" class="card-content"></div>
-</div>
-
-<script src="/libs/gitalk/gitalk.min.js"></script>
-<script>
-    let gitalk = new Gitalk({
-        clientID: '1457324863d072bb2866',
-        clientSecret: '8a588b2b408fd4088e202b072b8386e665d6539c',
-        repo: 'Contact',
-        owner: 'BorenHU',
-        admin: "BorenHU",
-        id: '2020-03-18T00-11-49',
-        distractionFreeMode: true  // Facebook-like distraction free mode
-    });
-
-    gitalk.render('gitalk-container');
-</script>
-    
-
-    
-
-    
-
-    
-    <div class="livere-card card" data-aos="fade-up">
-    <!-- 来必力City版安装代码 -->
-    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC80OTE5NS8yNTY4OQ==">
-        <script type="text/javascript">
-            (function (d, s) {
-                let j, e = d.getElementsByTagName(s)[0];
-                if (typeof LivereTower === 'function') {
-                    return;
-                }
-
-                j = d.createElement(s);
-                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                j.async = true;
-
-                e.parentNode.insertBefore(j, e);
-            })(document, 'script');
-        </script>
-        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
-    </div>
-    <!-- City版安装代码已完成 -->
-</div>
-    
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
-            <div class="card">
-                <a href="/2020/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/images/loading.gif" data-original="/medias/featureimages/12.jpg" class="responsive-img" alt="计算机系统概述">
-                        
-                        <span class="card-title">计算机系统概述</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            计算机系统基础知识
-1.1 计算机系统的基本组成​        计算机系统是由硬件系统和软件系统组成，计算机硬件是物理装置，计算机软件是程序，数据和相关文档的集合。
-计算机系统的基本组成：
-
-1. 计算机硬件​        基本的计算机
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/" class="post-category">
-                                    计算机系统
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/">
-                        <span class="chip bg-color">计算机系统</span>
                     </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/03/17/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/images/loading.gif" data-original="/medias/featureimages/22.jpg" class="responsive-img" alt="Java多线程编程">
-                        
-                        <span class="card-title">Java多线程编程</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Java多线程编程java给多线程编程提供了内置的支持。
-
-
-多线程：是多任务的一种特别的形式。
-
-
-进程：一个进程包括操作系统分配的内存空间，包含一个或多个线程。
-
-一个线程不能独立存在，它必须是进程的一部分。一个进程一直运行，直到所有的
-                        
-                    </div>
-                    <div class="publish-info">
+                    <div class="card-content article-content">
+                        <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
                             </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Java/" class="post-category">
-                                    Java
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" class="post-category">
+                                程序设计
                                 </a>
-                            
-                            
-                        </span>
+                                
+                                
+                            </span>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Java/">
-                        <span class="chip bg-color">Java</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">
-                        <span class="chip bg-color">多线程</span>
-                    </a>
-                    
-                </div>
-                
             </div>
+            
         </div>
-        
-    </div>
-</article>
-
-</div>
-
-
-<script>
-    $('#articleContent').on('copy', function (e) {
-        // IE8 or earlier browser is 'undefined'
-        if (typeof window.getSelection === 'undefined') return;
-
-        var selection = window.getSelection();
-        // if the selection is short let's not annoy our users.
-        if (('' + selection).length < Number.parseInt('50')) {
-            return;
-        }
-
-        // create a div outside of the visible area and fill it with the selected text.
-        var bodyElement = document.getElementsByTagName('body')[0];
-        var newdiv = document.createElement('div');
-        newdiv.style.position = 'absolute';
-        newdiv.style.left = '-99999px';
-        bodyElement.appendChild(newdiv);
-        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
-
-        // we need a <pre> tag workaround.
-        // otherwise the text inside "pre" loses all the line breaks!
-        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
-            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
-        }
-
-        var url = document.location.href;
-        newdiv.innerHTML += '<br />'
-            + '来源: JF's Blog<br />'
-            + '文章作者: <br />'
-            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
-            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
-
-        selection.selectAllChildren(newdiv);
-        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
-    });
-</script>
-
-
-<!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
-
-<!-- 代码语言 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
-    
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
-
-<!-- 代码块折行 -->
-
-    </div>
-    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
-        <div class="toc-widget">
-            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
-            <div id="toc-content"></div>
-        </div>
-    </div>
-</div>
-
-<!-- TOC 悬浮按钮. -->
-
-<div id="floating-toc-btn" class="hide-on-med-and-down">
-    <a class="btn-floating btn-large bg-color">
-        <i class="fas fa-list-ul"></i>
-    </a>
-</div>
-
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('h6'),
-            headingSelector: 'h1,h2,h3,h4,h5,h6'
-        });
-
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
-
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h1,h2,h3,h4,h5,h6').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-
-        
-        /* 修复文章卡片 div 的宽度. */
-        let fixPostCardWidth = function (srcId, targetId) {
-            let srcDiv = $('#' + srcId);
-            if (srcDiv.length === 0) {
-                return;
-            }
-
-            let w = srcDiv.width();
-            if (w >= 450) {
-                w = w + 21;
-            } else if (w >= 350 && w < 450) {
-                w = w + 18;
-            } else if (w >= 300 && w < 350) {
-                w = w + 16;
-            } else {
-                w = w + 14;
-            }
-            $('#' + targetId).width(w);
-        };
-
-        // 切换TOC目录展开收缩的相关操作.
-        const expandedClass = 'expanded';
-        let $tocAside = $('#toc-aside');
-        let $mainContent = $('#main-content');
-        $('#floating-toc-btn .btn-floating').click(function () {
-            if ($tocAside.hasClass(expandedClass)) {
-                $tocAside.removeClass(expandedClass).hide();
-                $mainContent.removeClass('l9');
-            } else {
-                $tocAside.addClass(expandedClass).show();
-                $mainContent.addClass('l9');
-            }
-            fixPostCardWidth('artDetail', 'prenext-posts');
-        });
-        
-    });
-</script>
-
-    
-
+    </article>
 </main>
+
 
 
 
