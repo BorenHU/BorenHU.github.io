@@ -4,13 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JavaArrayList底层_JDK源码解读, Cloud computing,Big data,姬发,JF,Java,云计算,大数据,齐发,启发,胡齐发,Hqia,Huqia">
-    <meta name="description" content="ArrayList_索引和_顺序相关方法
-List是有序，可重复的容器。
-
-
-有序：List中每个元素都有索引标记。可以根据元素的索引标记（在List中的位置）访问元素，从而精确控制这些元素。
-可重复：List允许加入重复的元素。更确切地讲">
+    <meta name="keywords" content="JavaArrayCopy方法, Cloud computing,Big data,姬发,JF,Java,云计算,大数据,齐发,启发,胡齐发,Hqia,Huqia">
+    <meta name="description" content="ArrayCopy（）我们先来看一下底层源码：
+    public static native void arraycopy(Object src,  int  srcPos,
+                              ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +15,7 @@ List是有序，可重复的容器。
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>JavaArrayList底层_JDK源码解读 | JF&#39;s Blog</title>
+    <title>JavaArrayCopy方法 | JF&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -563,12 +560,12 @@ List是有序，可重复的容器。
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/36.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/45.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JavaArrayList底层_JDK源码解读</h1>
+                    <h1 class="description center-align post-title">JavaArrayCopy方法</h1>
                 </div>
             </div>
         </div>
@@ -689,10 +686,6 @@ List是有序，可重复的容器。
                                 <span class="chip bg-color">Java</span>
                             </a>
                         
-                            <a href="/tags/ArrayList/">
-                                <span class="chip bg-color">ArrayList</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -714,7 +707,7 @@ List是有序，可重复的容器。
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-20
+                    2020-03-23
                 </div>
                 
 
@@ -728,7 +721,7 @@ List是有序，可重复的容器。
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    256
+                    185
                 </div>
                 
 
@@ -751,21 +744,30 @@ List是有序，可重复的容器。
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="ArrayList-索引和-顺序相关方法"><a href="#ArrayList-索引和-顺序相关方法" class="headerlink" title="ArrayList_索引和_顺序相关方法"></a>ArrayList_索引和_顺序相关方法</h2><blockquote>
-<p>List是有序，可重复的容器。</p>
-</blockquote>
-<ul>
-<li>有序：List中每个元素都有索引标记。可以根据元素的索引标记（在List中的位置）访问元素，从而精确控制这些元素。</li>
-<li>可重复：List允许加入重复的元素。更确切地讲，List通常允许满足e1.equals（e2）的元素重复加入容器。</li>
-</ul>
-<p><b>List接口常用的实现类有3个：ArrayList（数组），LinkedList（链表）和Vector（线程安全_数组）。</b></p><b>
-<p><img src="/images/loading.gif" data-original="https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/10.jpg" alt=""></p>
-<hr>
-<h2 id="ArrayList-扩容"><a href="#ArrayList-扩容" class="headerlink" title="ArrayList_扩容"></a>ArrayList_扩容</h2><p>ArrayList底层是用数组实现的存储。</p>
-<p>特点：查询效率高，增删效率低，线程不安全。我们一般使用它。</p>
-<p>要求线程安全一般使用Vector。</p>
-<p>数组长度是有限的，而ArrayList是可以存放任意数量的对象，长度不受限制。</p>
-</b><script>
+                <h2 id="ArrayCopy（）"><a href="#ArrayCopy（）" class="headerlink" title="ArrayCopy（）"></a>ArrayCopy（）</h2><p>我们先来看一下底层源码：</p>
+<pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">native</span> <span class="token keyword">void</span> <span class="token function">arraycopy</span><span class="token punctuation">(</span>Object src<span class="token punctuation">,</span>  <span class="token keyword">int</span>  srcPos<span class="token punctuation">,</span>
+                                        Object dest<span class="token punctuation">,</span> <span class="token keyword">int</span> destPos<span class="token punctuation">,</span>
+                                        <span class="token keyword">int</span> length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * Returns the same hash code for the given object as
+     * would be returned by the default method hashCode(),
+     * whether or not the given object's class overrides
+     * hashCode().
+     * The hash code for the null reference is zero.
+     *
+     * @param x object for which the hashCode is to be calculated
+     * @return  the hashCode
+     * @since   1.1
+     * @see Object#hashCode
+     * @see java.util.Objects#hashCode(Object)
+     */</span></code></pre>
+<p>src：要复制的数组(源数组)</p>
+<p>srcPos：复制源数组的起始位置</p>
+<p>dest：目标数组</p>
+<p>destPos：目标数组的下标位置</p>
+<p>length：要复制的长度</p>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -798,10 +800,6 @@ List是有序，可重复的容器。
                             
                                 <a href="/tags/Java/">
                                     <span class="chip bg-color">Java</span>
-                                </a>
-                            
-                                <a href="/tags/ArrayList/">
-                                    <span class="chip bg-color">ArrayList</span>
                                 </a>
                             
                         </div>
@@ -975,7 +973,7 @@ List是有序，可重复的容器。
         repo: 'Contact',
         owner: 'BorenHU',
         admin: "BorenHU",
-        id: '2020-03-20T00-35-39',
+        id: '2020-03-23T16-43-51',
         distractionFreeMode: true  // Facebook-like distraction free mode
     });
 
@@ -1018,9 +1016,62 @@ List是有序，可重复的容器。
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/03/23/JavaArrayCopy%E6%96%B9%E6%B3%95/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/45.jpg" class="responsive-img" alt="JavaArrayCopy方法">
+                        
+                        <span class="card-title">JavaArrayCopy方法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ArrayCopy（）我们先来看一下底层源码：
+    public static native void arraycopy(Object src,  int  srcPos,
+                              
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-23
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/03/21/Linux/">
                     <div class="card-image">
@@ -1040,9 +1091,9 @@ List是有序，可重复的容器。
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-21
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1060,59 +1111,6 @@ List是有序，可重复的容器。
                     
                     <a href="/tags/Linux/">
                         <span class="chip bg-color">Linux</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/03/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="计算机系统概述">
-                        
-                        <span class="card-title">计算机系统概述</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            计算机系统基础知识
-1.1 计算机系统的基本组成​        计算机系统是由硬件系统和软件系统组成，计算机硬件是物理装置，计算机软件是程序，数据和相关文档的集合。
-计算机系统的基本组成：
-
-1. 计算机硬件​        基本的计算机
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/" class="post-category">
-                                    计算机系统
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F/">
-                        <span class="chip bg-color">计算机系统</span>
                     </a>
                     
                 </div>

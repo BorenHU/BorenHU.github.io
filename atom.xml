@@ -6,10 +6,38 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://huqifa.com/"/>
-  <updated>2020-03-21T13:42:44.695Z</updated>
+  <updated>2020-03-23T13:24:04.387Z</updated>
   <id>http://huqifa.com/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaArrayCopy方法</title>
+    <link href="http://huqifa.com/2020/03/23/JavaArrayCopy%E6%96%B9%E6%B3%95/"/>
+    <id>http://huqifa.com/2020/03/23/JavaArrayCopy%E6%96%B9%E6%B3%95/</id>
+    <published>2020-03-23T08:43:51.000Z</published>
+    <updated>2020-03-23T13:24:04.387Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;ArrayCopy（）&quot;&gt;&lt;a href=&quot;#ArrayCopy（）&quot; class=&quot;headerlink&quot; title=&quot;ArrayCopy（）&quot;&gt;&lt;/a&gt;ArrayCopy（）&lt;/h2&gt;&lt;p&gt;我们先来看一下底层源码：&lt;/p&gt;
+&lt;pre class=&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>Linux</title>
@@ -43,7 +71,7 @@
     <link href="http://huqifa.com/2020/03/20/JavaArrayList%E5%BA%95%E5%B1%82JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/"/>
     <id>http://huqifa.com/2020/03/20/JavaArrayList%E5%BA%95%E5%B1%82JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/</id>
     <published>2020-03-19T16:35:39.000Z</published>
-    <updated>2020-03-23T03:28:28.294Z</updated>
+    <updated>2020-03-23T07:56:32.257Z</updated>
     
     <summary type="html">
     
