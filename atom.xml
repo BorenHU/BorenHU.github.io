@@ -6,17 +6,44 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://huqifa.com/"/>
-  <updated>2020-03-19T17:06:51.779Z</updated>
+  <updated>2020-03-21T13:42:44.695Z</updated>
   <id>http://huqifa.com/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux</title>
+    <link href="http://huqifa.com/2020/03/21/Linux/"/>
+    <id>http://huqifa.com/2020/03/21/Linux/</id>
+    <published>2020-03-21T10:12:25.000Z</published>
+    <updated>2020-03-21T13:42:44.695Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Linux的发行版&quot;&gt;&lt;a href=&quot;#Linux的发行版&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://huqifa.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://huqifa.com/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaArrayList底层_JDK源码解读</title>
     <link href="http://huqifa.com/2020/03/20/JavaArrayList%E5%BA%95%E5%B1%82JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/"/>
     <id>http://huqifa.com/2020/03/20/JavaArrayList%E5%BA%95%E5%B1%82JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/</id>
     <published>2020-03-19T16:35:39.000Z</published>
-    <updated>2020-03-19T17:06:51.779Z</updated>
+    <updated>2020-03-23T03:28:28.294Z</updated>
     
     <summary type="html">
     
