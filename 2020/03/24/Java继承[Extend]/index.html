@@ -4,10 +4,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Linux, Cloud computing,Big data,姬发,JF,Java,云计算,大数据,齐发,启发,胡齐发,Hqia,Huqia">
-    <meta name="description" content="Linux的发行版Linux的发行版说简单点就是将Linux内核与应用软件做一个打包。
+    <meta name="keywords" content="JavaExtend继承, Cloud computing,Big data,姬发,JF,Java,云计算,大数据,齐发,启发,胡齐发,Hqia,Huqia">
+    <meta name="description" content="JavaExtend继承继承大致分为
 
-目前市面上较知名的发行版有：Ubuntu、RedHat、CentOS、Debian、Fedora、SuSE、OpenSUSE、Arch Linux、S">
+“继承中的成员变量和方法”
+“继承中的构造方法”
+“继承中的对象转型”。
+
+继承的来源：如下有两个类，张三和李四，他俩都有姓名和年龄，那我们可以把这两个类共性的描述抽取出来，放在某个类中，然后让张三和">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -15,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Linux | JF&#39;s Blog</title>
+    <title>JavaExtend继承 | JF&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -560,12 +564,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Linux</h1>
+                    <h1 class="description center-align post-title">JavaExtend继承</h1>
                 </div>
             </div>
         </div>
@@ -682,8 +686,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Linux/">
-                                <span class="chip bg-color">Linux</span>
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
                             </a>
                         
                     </div>
@@ -694,8 +698,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Linux/" class="post-category">
-                                Linux
+                            <a href="/categories/Java/" class="post-category">
+                                Java
                             </a>
                         
                     </div>
@@ -707,28 +711,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-21
+                    2020-03-24
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-21
+                    2020-03-24
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    485
+                    658
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 				
@@ -744,49 +748,103 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Linux的发行版"><a href="#Linux的发行版" class="headerlink" title="Linux的发行版"></a>Linux的发行版</h2><p>Linux的发行版说简单点就是将Linux内核与应用软件做一个打包。</p>
-<p><img src="/images/loading.gif" data-original="https://gitee.com//BorenHU/BlogImage/raw/master/MarkDown/13.jpg" alt=""></p>
-<p>目前市面上较知名的发行版有：Ubuntu、RedHat、CentOS、Debian、Fedora、SuSE、OpenSUSE、Arch Linux、SolusOS 等。</p>
-<h2 id="Linux-文件与目录管理"><a href="#Linux-文件与目录管理" class="headerlink" title="Linux  文件与目录管理"></a>Linux  文件与目录管理</h2><p>Linux的目录结构为树状结构，最顶级的目录为根目录/。</p>
-<p>其他目录通过挂载可以将它们添加到树中，通过解除挂载可以移除它们。</p>
+                <h2 id="JavaExtend继承"><a href="#JavaExtend继承" class="headerlink" title="JavaExtend继承"></a>JavaExtend继承</h2><p>继承大致分为</p>
 <ul>
-<li><p>绝对路径</p>
-<p>路径的写法，由根目录 / 写起，例如：/usr/share/doc 这个目录。</p>
-</li>
-<li><p>相对路径</p>
-<p>路径的写法，不是由 / 写起，例如由 /usr/share/doc 要到 /usr/share/man底下时，可以写成：cd ../man </p>
-</li>
+<li>“继承中的成员变量和方法”</li>
+<li>“继承中的构造方法”</li>
+<li>“继承中的对象转型”。</li>
 </ul>
-<hr>
-<h3 id="处理目录常用的命令"><a href="#处理目录常用的命令" class="headerlink" title="处理目录常用的命令"></a>处理目录常用的命令</h3><ul>
-<li>ls：列出目录</li>
-<li>cd：切换目录</li>
-<li>pwd：显示当前的目录</li>
-<li>mkdir：创建一个新的目录</li>
-<li>rmdir：删除一个空的目录</li>
-<li>cp：复制文件或目录</li>
-<li>rm：移除文件或目录</li>
-<li>mv：移动文件与目录，或修改文件与目录的名称</li>
-</ul>
-<p>可以通过man[命令]来查看各个命令的使用文档，如：man cp。</p>
-<hr>
-<h3 id="Linux文件内容查看"><a href="#Linux文件内容查看" class="headerlink" title="Linux文件内容查看"></a>Linux文件内容查看</h3><p>Linux系统中使用以下命令来查看文件的内容：</p>
-<ul>
-<li>cat 由第一行开始显示文件内容</li>
-<li>tac 从最后一行开始显示</li>
-<li>nl 显示的时候，顺道输出行号！</li>
-<li>more 一页一页的显示文件内容</li>
-<li>less与more类似，但是比more更好的是，它可以往前翻页</li>
-<li>head 只看头几行</li>
-<li>tail 只看尾巴几行</li>
-</ul>
-<hr>
-<h3 id="Linux用户退出"><a href="#Linux用户退出" class="headerlink" title="Linux用户退出"></a>Linux用户退出</h3><p>用户退出登录的方式有以下三种：</p>
+<p>继承的来源：如下有两个类，张三和李四，他俩都有姓名和年龄，那我们可以把这两个类共性的描述抽取出来，放在某个类中，然后让张三和李四继承这个类，就可以共享这个类中的姓名和年龄了。</p>
 <ol>
-<li>在shell提示符下输入exit按回车确认</li>
-<li>在shell提示符下输入logout按回车确认</li>
-<li>按快捷键crtl + d（此方法同logout同效果）</li>
+<li><p>继承提高了代码的复用性，简化代码。而且只有建立了继承关系(向上转型)，才会有后面的多态特征的存在；</p>
+</li>
+<li><p>继承本质是类与类之间的关系，是把子类共性的描述抽取出来，放在父类中。千万不要为了获取其它类的功能简化代码，而随意搭建继承关系(姓李的类继承了姓张的类)。</p>
+</li>
+<li><p>子类拥有(继承)父类的成员(成员变量和成员方法)；</p>
+</li>
+<li><p>继承是类与类之间的关系，static是同类里不同对象之间进行共享；</p>
+</li>
 </ol>
+<p>如下：因为zhang和li两个类中都有name，age和fangfa()</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">zhang</span> <span class="token punctuation">{</span>
+ String name<span class="token punctuation">;</span>
+ <span class="token keyword">int</span> age<span class="token punctuation">;</span>
+ <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">fangfa</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"人类"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">li</span> <span class="token punctuation">{</span>
+ String name<span class="token punctuation">;</span>
+ <span class="token keyword">int</span> age<span class="token punctuation">;</span>
+ <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">fangfa</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"人类"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">jicheng</span><span class="token punctuation">{</span>
+ <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span></code></pre>
+<p>所以如下：把共性的描述抽取出来，放在一个类中，建立继承关系</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">renlei</span><span class="token punctuation">{</span><span class="token operator">--</span>父类，超类，基类
+ String name<span class="token punctuation">;</span>
+ <span class="token keyword">int</span> age<span class="token punctuation">;</span>
+ <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">fangfa</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"人类"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">zhang</span> <span class="token keyword">extends</span> <span class="token class-name">renlei</span><span class="token punctuation">{</span><span class="token operator">--</span><span class="token operator">-</span>子类<span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">li</span> <span class="token keyword">extends</span> <span class="token class-name">renlei</span><span class="token punctuation">{</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span>子类<span class="token punctuation">}</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">jicheng</span><span class="token punctuation">{</span>
+ <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  zhang zhangsan<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">zhang</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>zhangsan<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">--</span><span class="token operator">-</span>子类拥有父类成员
+  zhangsan<span class="token punctuation">.</span><span class="token function">fangfa</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  li lisi<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">li</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>lisi<span class="token punctuation">.</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">--</span><span class="token operator">-</span>子类拥有父类成员
+  lisi<span class="token punctuation">.</span><span class="token function">fangfa</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span> <span class="token punctuation">}</span>
+
+</code></pre>
+<ol start="5">
+<li>子类不能拥有父类中被private修饰后的成员；</li>
+</ol>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">fu</span><span class="token punctuation">{</span>
+ <span class="token keyword">private</span> String str<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">zi</span> <span class="token keyword">extends</span> <span class="token class-name">fu</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">jicheng</span> <span class="token punctuation">{</span>
+ <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>    
+  zi duixiang<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">zi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  duixiang<span class="token punctuation">.</span>str<span class="token operator">=</span><span class="token string">"hello"</span><span class="token punctuation">;</span><span class="token operator">--</span><span class="token operator">-</span>报错
+  System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>duixiang<span class="token punctuation">.</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token operator">--</span><span class="token operator">-</span>报错
+ <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<ol start="6">
+<li>java可以搭建多层继承关系。在多层继承中最下层的子类拥有整个继承体系的成员，最上层的父类里面定义了所有子类的共性描述。多层继承也说明没有绝对的子父类，都是相对而言的；</li>
+</ol>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">ye</span><span class="token punctuation">{</span>
+ <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">fangfa1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"爷"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">fu</span> <span class="token keyword">extends</span> <span class="token class-name">ye</span><span class="token punctuation">{</span>
+ <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">fangfa2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"父"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token keyword">class</span> <span class="token class-name">zi</span> <span class="token keyword">extends</span> <span class="token class-name">fu</span><span class="token punctuation">{</span>
+ <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">fangfa3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"子"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">jicheng</span><span class="token punctuation">{</span>
+ <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+  zi duixiang<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">zi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  duixiang<span class="token punctuation">.</span><span class="token function">fangfa1</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  duixiang<span class="token punctuation">.</span><span class="token function">fangfa2</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  duixiang<span class="token punctuation">.</span><span class="token function">fangfa3</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span></code></pre>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -818,8 +876,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Linux/">
-                                    <span class="chip bg-color">Linux</span>
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
                                 </a>
                             
                         </div>
@@ -993,7 +1051,7 @@
         repo: 'Contact',
         owner: 'BorenHU',
         admin: "BorenHU",
-        id: '2020-03-21T18-12-25',
+        id: '2020-03-24T19-43-10',
         distractionFreeMode: true  // Facebook-like distraction free mode
     });
 
@@ -1040,26 +1098,27 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/03/23/JavaArrayCopy%E6%96%B9%E6%B3%95/">
+                <a href="/2020/03/24/Java%E5%A4%9A%E6%80%81/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/45.jpg" class="responsive-img" alt="JavaArrayCopy方法">
+                        <img src="/medias/featureimages/29.jpg" class="responsive-img" alt="Java多态">
                         
-                        <span class="card-title">JavaArrayCopy方法</span>
+                        <span class="card-title">Java多态</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ArrayCopy（）我们先来看一下底层源码：
-    public static native void arraycopy(Object src,  int  srcPos,
-                              
+                            Java多态
+多态：事物的多种形态。即：不同的对象收到相同的消息，产生不同的结果。相同的对象收到不同的消息，产生不同的结果。
+
+比如：张三收到一部手机，会打游戏李四收到一部手机，会发微信王五收到一部手机，会听歌曲赵六收到一部手机，会看电影即
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-23
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-24
                         </span>
                         <span class="publish-author">
                             
@@ -1091,29 +1150,28 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/20/JavaArrayList%E5%BA%95%E5%B1%82JDK%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/">
+                <a href="/2020/03/24/Java%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%5BStatic%5D/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/36.jpg" class="responsive-img" alt="JavaArrayList底层_JDK源码解读">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="JavaStatic静态方法">
                         
-                        <span class="card-title">JavaArrayList底层_JDK源码解读</span>
+                        <span class="card-title">JavaStatic静态方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            ArrayList_索引和_顺序相关方法
-List是有序，可重复的容器。
+                            JavaStatic静态修饰符static关键字作用：是一个修饰符，用于修饰成员(成员变量,成员方法)
 
+被static 修饰后的成员变量只有一份
 
-有序：List中每个元素都有索引标记。可以根据元素的索引标记（在List中的位置）访问元素，从而精确控制这些元素。
-可重复：List允许加入重复的元素。更确切地讲
+当成员被static修饰之后，多了一种访问方式,除了可以对象调用之外，还可以被类直接调用（
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-24
                             </span>
                         <span class="publish-author">
                             
@@ -1132,10 +1190,6 @@ List是有序，可重复的容器。
                     
                     <a href="/tags/Java/">
                         <span class="chip bg-color">Java</span>
-                    </a>
-                    
-                    <a href="/tags/ArrayList/">
-                        <span class="chip bg-color">ArrayList</span>
                     </a>
                     
                 </div>
@@ -1319,7 +1373,7 @@ List是有序，可重复的容器。
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">12.3k</span>&nbsp;字
+                class="white-color">22.4k</span>&nbsp;字
             
             
             

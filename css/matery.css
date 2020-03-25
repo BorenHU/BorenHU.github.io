@@ -14,7 +14,7 @@
 }
 
 /*大屏幕下(桌面类)的样式*/
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
     .container {
         width: 90%;
         max-width: 1300px;
@@ -29,7 +29,7 @@
     .post-container {
         width: 90%;
         margin: 0 auto;
-        max-width: 1250px;
+        max-width: 1200px;
     }
 }
 
@@ -249,7 +249,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #222529 0%, #194958 100%);
+    background-image: linear-gradient(to right, #31a0c3 0%, #0d546b 100%);
 }
 
 .text-color {

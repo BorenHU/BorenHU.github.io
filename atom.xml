@@ -6,17 +6,17 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://huqifa.com/"/>
-  <updated>2020-03-23T13:24:04.387Z</updated>
+  <updated>2020-03-25T07:53:28.889Z</updated>
   <id>http://huqifa.com/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>JavaArrayCopy方法</title>
-    <link href="http://huqifa.com/2020/03/23/JavaArrayCopy%E6%96%B9%E6%B3%95/"/>
-    <id>http://huqifa.com/2020/03/23/JavaArrayCopy%E6%96%B9%E6%B3%95/</id>
-    <published>2020-03-23T08:43:51.000Z</published>
-    <updated>2020-03-23T13:24:04.387Z</updated>
+    <title>删除排序数组中的重复项[初级算法]</title>
+    <link href="http://huqifa.com/2020/03/25/%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9[%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95]/"/>
+    <id>http://huqifa.com/2020/03/25/%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9[%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95]/</id>
+    <published>2020-03-25T03:37:02.000Z</published>
+    <updated>2020-03-25T07:53:28.889Z</updated>
     
     <summary type="html">
     
@@ -24,8 +24,34 @@
       
         
         
-          &lt;h2 id=&quot;ArrayCopy（）&quot;&gt;&lt;a href=&quot;#ArrayCopy（）&quot; class=&quot;headerlink&quot; title=&quot;ArrayCopy（）&quot;&gt;&lt;/a&gt;ArrayCopy（）&lt;/h2&gt;&lt;p&gt;我们先来看一下底层源码：&lt;/p&gt;
-&lt;pre class=&quot;
+          &lt;h2 id=&quot;删除排序数组中的重复项&quot;&gt;&lt;a href=&quot;#删除排序数组中的重复项&quot; class=&quot;headerlink&quot; title=&quot;删除排序数组中的重复项&quot;&gt;&lt;/a&gt;删除排序数组中的重复项&lt;/h2&gt;&lt;h3 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="初级算法" scheme="http://huqifa.com/categories/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="初级算法" scheme="http://huqifa.com/tags/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java接口[interface]</title>
+    <link href="http://huqifa.com/2020/03/24/Java%E6%8E%A5%E5%8F%A3[interface]/"/>
+    <id>http://huqifa.com/2020/03/24/Java%E6%8E%A5%E5%8F%A3[interface]/</id>
+    <published>2020-03-24T13:09:16.000Z</published>
+    <updated>2020-03-25T01:43:33.961Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Java接口-interface&quot;&gt;&lt;a href=&quot;#Java接口-interface&quot; class=&quot;headerlink&quot;
         
       
     
@@ -40,11 +66,200 @@
   </entry>
   
   <entry>
-    <title>Linux</title>
-    <link href="http://huqifa.com/2020/03/21/Linux/"/>
-    <id>http://huqifa.com/2020/03/21/Linux/</id>
+    <title>Java抽象[Abstract]</title>
+    <link href="http://huqifa.com/2020/03/24/Java%E6%8A%BD%E8%B1%A1[Abstract]/"/>
+    <id>http://huqifa.com/2020/03/24/Java%E6%8A%BD%E8%B1%A1[Abstract]/</id>
+    <published>2020-03-24T13:01:30.000Z</published>
+    <updated>2020-03-25T09:32:48.468Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;为什么使用抽象类&quot;&gt;&lt;a href=&quot;#为什么使用抽象类&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java多态</title>
+    <link href="http://huqifa.com/2020/03/24/Java%E5%A4%9A%E6%80%81/"/>
+    <id>http://huqifa.com/2020/03/24/Java%E5%A4%9A%E6%80%81/</id>
+    <published>2020-03-24T12:38:04.000Z</published>
+    <updated>2020-03-24T15:23:21.351Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Java多态&quot;&gt;&lt;a href=&quot;#Java多态&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaExtend继承</title>
+    <link href="http://huqifa.com/2020/03/24/Java%E7%BB%A7%E6%89%BF[Extend]/"/>
+    <id>http://huqifa.com/2020/03/24/Java%E7%BB%A7%E6%89%BF[Extend]/</id>
+    <published>2020-03-24T11:43:10.000Z</published>
+    <updated>2020-03-24T12:34:08.354Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;JavaExtend继承&quot;&gt;&lt;a href=&quot;#JavaExtend继承&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaStatic静态方法</title>
+    <link href="http://huqifa.com/2020/03/24/Java%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95[Static]/"/>
+    <id>http://huqifa.com/2020/03/24/Java%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95[Static]/</id>
+    <published>2020-03-24T09:45:16.000Z</published>
+    <updated>2020-03-24T11:42:20.633Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;JavaStatic静态修饰符&quot;&gt;&lt;a href=&quot;#JavaStatic静态修饰符&quot; class=&quot;headerlink&quot; title=&quot;JavaStatic静态修饰符&quot;&gt;&lt;/a&gt;JavaStatic静态修饰符&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java封装</title>
+    <link href="http://huqifa.com/2020/03/24/Java%E5%B0%81%E8%A3%85/"/>
+    <id>http://huqifa.com/2020/03/24/Java%E5%B0%81%E8%A3%85/</id>
+    <published>2020-03-24T09:13:02.000Z</published>
+    <updated>2020-03-24T09:45:03.073Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Java封装&quot;&gt;&lt;a href=&quot;#Java封装&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>买卖股票的最佳时机[初级算法]</title>
+    <link href="http://huqifa.com/2020/03/24/%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA[%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95]/"/>
+    <id>http://huqifa.com/2020/03/24/%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BA[%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95]/</id>
+    <published>2020-03-24T03:08:58.000Z</published>
+    <updated>2020-03-25T10:11:50.679Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;买卖股票的最佳时期-初级算法&quot;&gt;&lt;a href=&quot;#买卖股票的最佳时期-初级算法&quot; class=&quot;headerlink&quot; title=&quot;买卖股票的最佳时期[初级算法]&quot;&gt;&lt;/a&gt;买卖股票的最佳时期[初级算法]&lt;/h2&gt;&lt;p&gt;给定一个数组，它的第
+        
+      
+    
+    </summary>
+    
+    
+      <category term="初级算法" scheme="http://huqifa.com/categories/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="初级算法" scheme="http://huqifa.com/tags/%E5%88%9D%E7%BA%A7%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaArrayCopy方法</title>
+    <link href="http://huqifa.com/2020/03/23/Java%E6%96%B9%E6%B3%95[ArrayCopy]/"/>
+    <id>http://huqifa.com/2020/03/23/Java%E6%96%B9%E6%B3%95[ArrayCopy]/</id>
+    <published>2020-03-23T08:43:51.000Z</published>
+    <updated>2020-03-24T02:24:26.957Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;ArrayCopy（）&quot;&gt;&lt;a href=&quot;#ArrayCopy（）&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux起步</title>
+    <link href="http://huqifa.com/2020/03/21/Linux%E8%B5%B7%E6%AD%A5/"/>
+    <id>http://huqifa.com/2020/03/21/Linux%E8%B5%B7%E6%AD%A5/</id>
     <published>2020-03-21T10:12:25.000Z</published>
-    <updated>2020-03-21T13:42:44.695Z</updated>
+    <updated>2020-03-24T03:26:30.439Z</updated>
     
     <summary type="html">
     
@@ -157,7 +372,7 @@
     <link href="http://huqifa.com/2020/03/17/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/"/>
     <id>http://huqifa.com/2020/03/17/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</id>
     <published>2020-03-17T11:40:22.000Z</published>
-    <updated>2020-03-20T10:54:03.871Z</updated>
+    <updated>2020-03-24T00:31:16.436Z</updated>
     
     <summary type="html">
     
@@ -187,7 +402,7 @@
     <link href="http://huqifa.com/2020/03/12/Java%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/"/>
     <id>http://huqifa.com/2020/03/12/Java%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</id>
     <published>2020-03-12T06:07:30.000Z</published>
-    <updated>2020-03-19T06:00:42.760Z</updated>
+    <updated>2020-03-24T00:38:47.967Z</updated>
     
     <summary type="html">
     
