@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="电影清单, Cloud computing,Big data,姬发,JF,Java,云计算,大数据,齐发,启发,胡齐发,Hqia,Huqia">
-    <meta name="description" content="电影清单 | JF&#39;s Blog">
+    <meta name="keywords" content="JavaMap接口_HashMap常用方法, Cloud computing,Big data,姬发,JF,Java,云计算,大数据,齐发,启发,胡齐发,Hqia,Huqia">
+    <meta name="description" content="JavaMap接口_HashMap常用方法​    现实生活中，我们经常需要成对存储某些信息。比如，我们使用的微信，一个手机号只能对应一个微信账户。这就是一种成对存储的关系。
+​    Map就是用来存储“键(key)-值(Value)对”">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>电影清单 | JF&#39;s Blog</title>
+    <title>JavaMap接口_HashMap常用方法 | JF&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon1.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -558,12 +559,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/40.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">电影清单</h1>
+                    <h1 class="description center-align post-title">JavaMap接口_HashMap常用方法</h1>
                 </div>
             </div>
         </div>
@@ -678,12 +679,29 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                            <a href="/tags/HashMap/">
+                                <span class="chip bg-color">HashMap</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Java/" class="post-category">
+                                Java
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -692,28 +710,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-05
+                    2020-03-28
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-19
+                    2020-03-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    52
+                    667
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
 				
@@ -729,7 +747,162 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <script>
+                <h2 id="JavaMap接口-HashMap常用方法"><a href="#JavaMap接口-HashMap常用方法" class="headerlink" title="JavaMap接口_HashMap常用方法"></a>JavaMap接口_HashMap常用方法</h2><p>​    现实生活中，我们经常需要成对存储某些信息。比如，我们使用的微信，一个手机号只能对应一个微信账户。这就是一种成对存储的关系。</p>
+<p>​    Map就是用来存储“键(key)-值(Value)对”的。Map类中存储的“键值对”通过键来标识，所以“键对象”不能重复。</p>
+<p>​    Map接口实现类有HashMap，TreeMap，HashTable，properties。</p>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">//源码</span>
+<span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">Map</span><span class="token operator">&lt;</span>K<span class="token punctuation">,</span> V<span class="token operator">></span> <span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// Query Operations</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * Returns the number of key-value mappings in this map.  If the
+     * map contains more than {@code Integer.MAX_VALUE} elements, returns
+     * {@code Integer.MAX_VALUE}.
+     *
+     * @return the number of key-value mappings in this map
+     */</span></code></pre>
+<h3 id="常见方法"><a href="#常见方法" class="headerlink" title="常见方法"></a>常见方法</h3><p><img src="/images/loading.gif" data-original="https://img-blog.csdnimg.cn/20200328182018633.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pJRkFRTw==,size_16,color_FFFFFF,t_70" alt=""></p>
+<ul>
+<li>Map中键不能重复，如果重复，新的会覆盖旧的。（是否重复是根据equals判断）</li>
+</ul>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> cn<span class="token punctuation">.</span>Map<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>HashMap<span class="token punctuation">;</span>
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Map<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/**
+ * 测试Map
+ * @author HQF
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">TestMap</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// TODO Auto-generated method stub</span>
+        Employee e1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Employee</span><span class="token punctuation">(</span><span class="token number">1001</span><span class="token punctuation">,</span> <span class="token string">"张三"</span><span class="token punctuation">,</span><span class="token number">100000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Employee e2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Employee</span><span class="token punctuation">(</span><span class="token number">1001</span><span class="token punctuation">,</span> <span class="token string">"李四"</span><span class="token punctuation">,</span><span class="token number">100000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Employee e3 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Employee</span><span class="token punctuation">(</span><span class="token number">1001</span><span class="token punctuation">,</span> <span class="token string">"王五"</span><span class="token punctuation">,</span><span class="token number">100000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        Map<span class="token operator">&lt;</span>Integer<span class="token punctuation">,</span> Employee<span class="token operator">></span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token number">1001</span><span class="token punctuation">,</span> e1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token number">1002</span><span class="token punctuation">,</span> e2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token number">1003</span><span class="token punctuation">,</span> e3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        Employee employee <span class="token operator">=</span> map<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token number">1001</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>employee<span class="token punctuation">.</span><span class="token function">getEname</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//雇员信息</span>
+<span class="token keyword">class</span> <span class="token class-name">Employee</span><span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">int</span> id<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> String ename<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token keyword">double</span> salary<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token function">Employee</span><span class="token punctuation">(</span><span class="token keyword">int</span> id<span class="token punctuation">,</span> String ename<span class="token punctuation">,</span> <span class="token keyword">double</span> salary<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">=</span> id<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>ename <span class="token operator">=</span> ename<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>salary <span class="token operator">=</span> salary<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Override</span>
+    <span class="token keyword">public</span> String <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// TODO Auto-generated method stub</span>
+        <span class="token keyword">return</span> <span class="token string">"id:"</span><span class="token operator">+</span>id<span class="token operator">+</span><span class="token string">"name:"</span><span class="token operator">+</span>ename<span class="token operator">+</span><span class="token string">"salary:"</span><span class="token operator">+</span>salary<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">int</span> <span class="token function">getId</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> id<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setId</span><span class="token punctuation">(</span><span class="token keyword">int</span> id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>id <span class="token operator">=</span> id<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> String <span class="token function">getEname</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> ename<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setEname</span><span class="token punctuation">(</span>String ename<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>ename <span class="token operator">=</span> ename<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">double</span> <span class="token function">getSalary</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> salary<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setSalary</span><span class="token punctuation">(</span><span class="token keyword">double</span> salary<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>salary <span class="token operator">=</span> salary<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<hr>
+<ul>
+<li>HashMap底层实现采用了哈希表，这是一种非常重要的数据结构。</li>
+<li>哈希表的基本结构就是“数组”+“链表”。</li>
+</ul>
+<p><img src="/images/loading.gif" data-original="https://img-blog.csdnimg.cn/20200328194725827.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pJRkFRTw==,size_16,color_FFFFFF,t_70" alt=""></p>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">//Node源码</span>
+<span class="token comment" spellcheck="true">//说实话，看不懂！</span>
+    <span class="token keyword">static</span> <span class="token keyword">class</span> <span class="token class-name">Node</span><span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> <span class="token keyword">implements</span> <span class="token class-name">Map<span class="token punctuation">.</span>Entry</span><span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> <span class="token punctuation">{</span>
+        <span class="token keyword">final</span> <span class="token keyword">int</span> hash<span class="token punctuation">;</span>
+        <span class="token keyword">final</span> K key<span class="token punctuation">;</span>
+        V value<span class="token punctuation">;</span>
+        Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> next<span class="token punctuation">;</span>
+
+        <span class="token function">Node</span><span class="token punctuation">(</span><span class="token keyword">int</span> hash<span class="token punctuation">,</span> K key<span class="token punctuation">,</span> V value<span class="token punctuation">,</span> Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>hash <span class="token operator">=</span> hash<span class="token punctuation">;</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>key <span class="token operator">=</span> key<span class="token punctuation">;</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>value <span class="token operator">=</span> value<span class="token punctuation">;</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>next <span class="token operator">=</span> next<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">public</span> <span class="token keyword">final</span> K <span class="token function">getKey</span><span class="token punctuation">(</span><span class="token punctuation">)</span>        <span class="token punctuation">{</span> <span class="token keyword">return</span> key<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+        <span class="token keyword">public</span> <span class="token keyword">final</span> V <span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span>      <span class="token punctuation">{</span> <span class="token keyword">return</span> value<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+        <span class="token keyword">public</span> <span class="token keyword">final</span> String <span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> key <span class="token operator">+</span> <span class="token string">"="</span> <span class="token operator">+</span> value<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+        <span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">int</span> <span class="token function">hashCode</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> Objects<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span> <span class="token operator">^</span> Objects<span class="token punctuation">.</span><span class="token function">hashCode</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">public</span> <span class="token keyword">final</span> V <span class="token function">setValue</span><span class="token punctuation">(</span>V newValue<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            V oldValue <span class="token operator">=</span> value<span class="token punctuation">;</span>
+            value <span class="token operator">=</span> newValue<span class="token punctuation">;</span>
+            <span class="token keyword">return</span> oldValue<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">public</span> <span class="token keyword">final</span> <span class="token keyword">boolean</span> <span class="token function">equals</span><span class="token punctuation">(</span>Object o<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>o <span class="token operator">==</span> <span class="token keyword">this</span><span class="token punctuation">)</span>
+                <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>o <span class="token keyword">instanceof</span> <span class="token class-name">Map<span class="token punctuation">.</span>Entry</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                Map<span class="token punctuation">.</span>Entry<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token punctuation">,</span><span class="token operator">?</span><span class="token operator">></span> e <span class="token operator">=</span> <span class="token punctuation">(</span>Map<span class="token punctuation">.</span>Entry<span class="token operator">&lt;</span><span class="token operator">?</span><span class="token punctuation">,</span><span class="token operator">?</span><span class="token operator">></span><span class="token punctuation">)</span>o<span class="token punctuation">;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>Objects<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> e<span class="token punctuation">.</span><span class="token function">getKey</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span>
+                    Objects<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>value<span class="token punctuation">,</span> e<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span></code></pre>
+<p><img src="/images/loading.gif" data-original="https://img-blog.csdnimg.cn/20200328195900598.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pJRkFRTw==,size_16,color_FFFFFF,t_70" alt=""></p>
+<p><img src="/images/loading.gif" data-original="https://img-blog.csdnimg.cn/20200328200529968.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pJRkFRTw==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h3 id="测试Hash算法"><a href="#测试Hash算法" class="headerlink" title="测试Hash算法"></a>测试Hash算法</h3><pre class=" language-java"><code class="language-java"><span class="token keyword">package</span> cn<span class="token punctuation">.</span>Map<span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/**
+ * 测试Hash算法
+ * @author HQF
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Test</span> <span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// TODO Auto-generated method stub</span>
+        <span class="token keyword">int</span>  h <span class="token operator">=</span> <span class="token number">25860399</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> length <span class="token operator">=</span> <span class="token number">16</span><span class="token punctuation">;</span>
+        <span class="token function">myHash</span><span class="token punctuation">(</span>h<span class="token punctuation">,</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">myHash</span><span class="token punctuation">(</span><span class="token keyword">int</span> h<span class="token punctuation">,</span><span class="token keyword">int</span> length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>h<span class="token operator">&amp;</span><span class="token punctuation">(</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">//length为2的整数幂情况下，和取余的值一样。</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>h<span class="token operator">%</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> h<span class="token operator">&amp;</span><span class="token punctuation">(</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -759,7 +932,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
+                                <a href="/tags/HashMap/">
+                                    <span class="chip bg-color">HashMap</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -931,7 +1112,7 @@
         repo: 'Contact',
         owner: 'BorenHU',
         admin: "BorenHU",
-        id: '2020-03-05T02-45-53',
+        id: '2020-03-28T14-52-42',
         distractionFreeMode: true  // Facebook-like distraction free mode
     });
 
@@ -979,31 +1160,33 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/moves/index.html">
+                <a href="/2020/03/28/JavaMap%E6%8E%A5%E5%8F%A3_HashMap%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/40.jpg" class="responsive-img" alt="电影清单">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="JavaMap接口_HashMap常用方法">
                         
-                        <span class="card-title">电影清单</span>
+                        <span class="card-title">JavaMap接口_HashMap常用方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                            JavaMap接口_HashMap常用方法​    现实生活中，我们经常需要成对存储某些信息。比如，我们使用的微信，一个手机号只能对应一个微信账户。这就是一种成对存储的关系。
+​    Map就是用来存储“键(key)-值(Value)对”
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-28
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
                             
                             
                         </span>
@@ -1011,46 +1194,70 @@
                 </div>
 
                 
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                    <a href="/tags/HashMap/">
+                        <span class="chip bg-color">HashMap</span>
+                    </a>
+                    
+                </div>
+                
             </div>
         </div>
         
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/moves/index.html">
+                <a href="/2020/03/26/Php%E5%9F%BA%E7%A1%80/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/40.jpg" class="responsive-img" alt="电影清单">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Php基础">
                         
-                        <span class="card-title">电影清单</span>
+                        <span class="card-title">Php基础</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return
+                            1. _SERVER变量
+PHP_SELF : 表示当前请求的网页地址（不含域名部分）
+SERVER_NAME : 表示当前请求的服务器名
+SERVER_ADDR : 表示当前请求的服务器IP地址
+DOCUMENT_ROOT : 表示当前请
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-26
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Php/" class="post-category">
+                                    Php
+                                </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Php/">
+                        <span class="chip bg-color">Php</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

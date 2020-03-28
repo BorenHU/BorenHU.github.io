@@ -24,7 +24,7 @@ $(function () {
 
         let w = srcDiv.width();
         if (w >= 450) {
-            w = w + 20;
+            w = w + 21;
         } else if (w >= 350 && w < 450) {
             w = w + 18;
         } else if (w >= 300 && w < 350) {
