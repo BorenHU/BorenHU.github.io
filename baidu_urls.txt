@@ -1,4 +1,6 @@
-http://huqifa.com/2020/03/28/JavaMap%E6%8E%A5%E5%8F%A3_HashMap%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/
+http://huqifa.com/2020/03/31/C%E8%AF%AD%E8%A8%80[%E6%8C%87%E9%92%88]/
+http://huqifa.com/2020/03/29/JavaHashMap%E6%89%8B%E5%8A%A8%E5%AE%9E%E7%8E%B0/
+http://huqifa.com/2020/03/28/JavaHashMap%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/
 http://huqifa.com/2020/03/26/Php%E5%9F%BA%E7%A1%80/
 http://huqifa.com/2020/03/26/JavaVector%E5%90%91%E9%87%8F_%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E5%BA%95%E5%B1%82%E8%A7%A3%E8%AF%BB/
 http://huqifa.com/2020/03/25/JavaLinkedList%E7%89%B9%E7%82%B9%E5%92%8C%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0/

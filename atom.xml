@@ -6,17 +6,75 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://huqifa.com/"/>
-  <updated>2020-03-28T12:20:31.092Z</updated>
+  <updated>2020-03-31T09:05:25.570Z</updated>
   <id>http://huqifa.com/</id>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>C语言[指针]</title>
+    <link href="http://huqifa.com/2020/03/31/C%E8%AF%AD%E8%A8%80[%E6%8C%87%E9%92%88]/"/>
+    <id>http://huqifa.com/2020/03/31/C%E8%AF%AD%E8%A8%80[%E6%8C%87%E9%92%88]/</id>
+    <published>2020-03-31T04:40:36.000Z</published>
+    <updated>2020-03-31T09:05:25.570Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;C语言指针学习&quot;&gt;&lt;a href=&quot;#C语言指针学习&quot; class=&quot;headerlink&quot; title=&quot;C语言指针学习&quot;&gt;&lt;/a&gt;C语言指针学习&lt;/h2&gt;&lt;h3 id=&quot;1-为什么会有指针？这门技术解决了什么问题？&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="C语言" scheme="http://huqifa.com/categories/C%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="C语言" scheme="http://huqifa.com/tags/C%E8%AF%AD%E8%A8%80/"/>
+    
+      <category term="指针" scheme="http://huqifa.com/tags/%E6%8C%87%E9%92%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaHashMap手动实现</title>
+    <link href="http://huqifa.com/2020/03/29/JavaHashMap%E6%89%8B%E5%8A%A8%E5%AE%9E%E7%8E%B0/"/>
+    <id>http://huqifa.com/2020/03/29/JavaHashMap%E6%89%8B%E5%8A%A8%E5%AE%9E%E7%8E%B0/</id>
+    <published>2020-03-29T14:36:48.000Z</published>
+    <updated>2020-03-30T03:23:45.466Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;JavaHashMap底层原理-查找键值对过程&quot;&gt;&lt;a href=&quot;#JavaHashMap底层原理-查找键值对过程&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://huqifa.com/tags/Java/"/>
+    
+      <category term="HashMap" scheme="http://huqifa.com/tags/HashMap/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaMap接口_HashMap常用方法</title>
-    <link href="http://huqifa.com/2020/03/28/JavaMap%E6%8E%A5%E5%8F%A3_HashMap%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/"/>
-    <id>http://huqifa.com/2020/03/28/JavaMap%E6%8E%A5%E5%8F%A3_HashMap%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</id>
+    <link href="http://huqifa.com/2020/03/28/JavaHashMap%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+    <id>http://huqifa.com/2020/03/28/JavaHashMap%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</id>
     <published>2020-03-28T06:52:42.000Z</published>
-    <updated>2020-03-28T12:20:31.092Z</updated>
+    <updated>2020-03-29T14:29:33.011Z</updated>
     
     <summary type="html">
     
@@ -506,69 +564,6 @@
       <category term="Java" scheme="http://huqifa.com/tags/Java/"/>
     
       <category term="GUI" scheme="http://huqifa.com/tags/GUI/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java多线程编程</title>
-    <link href="http://huqifa.com/2020/03/17/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/"/>
-    <id>http://huqifa.com/2020/03/17/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%BC%96%E7%A8%8B/</id>
-    <published>2020-03-17T11:40:22.000Z</published>
-    <updated>2020-03-24T00:31:16.436Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Java多线程编程&quot;&gt;&lt;a href=&quot;#Java多线程编程&quot; class=&quot;headerlink&quot; title=&quot;Java多线程编程&quot;&gt;&lt;/a&gt;Java多线程编程&lt;/h2&gt;&lt;p&gt;java给多线程编程提供了内置的支持。&lt;/p&gt;
-&lt;p&gt;&lt;img
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://huqifa.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://huqifa.com/tags/Java/"/>
-    
-      <category term="多线程" scheme="http://huqifa.com/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Java垃圾回收机制</title>
-    <link href="http://huqifa.com/2020/03/12/Java%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/"/>
-    <id>http://huqifa.com/2020/03/12/Java%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</id>
-    <published>2020-03-12T06:07:30.000Z</published>
-    <updated>2020-03-24T00:38:47.967Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Java-虚拟机&quot;&gt;&lt;a href=&quot;#Java-虚拟机&quot; class=&quot;headerlink&quot; title=&quot;Java 虚拟机&quot;&gt;&lt;/a&gt;Java 虚拟机&lt;/h2&gt;&lt;p&gt;Java虚拟机的内存可以分为三个区域：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;栈
-        
-      
-    
-    </summary>
-    
-    
-      <category term="Java" scheme="http://huqifa.com/categories/Java/"/>
-    
-    
-      <category term="Java" scheme="http://huqifa.com/tags/Java/"/>
-    
-      <category term="虚拟机" scheme="http://huqifa.com/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
-    
-      <category term="垃圾回收" scheme="http://huqifa.com/tags/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/"/>
     
   </entry>
   
